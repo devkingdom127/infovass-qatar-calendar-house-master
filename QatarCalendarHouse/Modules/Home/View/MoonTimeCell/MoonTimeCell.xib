@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MoonTimeCell" rowHeight="101" id="KGk-i7-Jjw" customClass="MoonTimeCell" customModule="التقويم_القطري" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiH-JL-9ry">
+                        <rect key="frame" x="20" y="5" width="317" height="91"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cof-WW-M6e">
+                                <rect key="frame" x="0.0" y="0.0" width="317" height="91"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VtQ-xr-2yO">
+                                        <rect key="frame" x="0.0" y="0.0" width="154.5" height="91"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ywv-Jv-zxT">
+                                                <rect key="frame" x="5" y="0.0" width="144.5" height="91"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="73K-gD-DfN">
+                                                        <rect key="frame" x="0.0" y="20.5" width="70" height="50"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="غروب القمر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="FNJ-t8-5Rm">
+                                                        <rect key="frame" x="75" y="35.5" width="69.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="secondaryBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ywv-Jv-zxT" secondAttribute="bottom" id="WDT-aW-xDH"/>
+                                            <constraint firstAttribute="trailing" secondItem="ywv-Jv-zxT" secondAttribute="trailing" constant="5" id="bFs-Ph-Tmb"/>
+                                            <constraint firstItem="ywv-Jv-zxT" firstAttribute="top" secondItem="VtQ-xr-2yO" secondAttribute="top" id="oYG-2W-KCH"/>
+                                            <constraint firstItem="ywv-Jv-zxT" firstAttribute="leading" secondItem="VtQ-xr-2yO" secondAttribute="leading" constant="5" id="wZY-na-Ggn"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wW1-3i-7d9">
+                                        <rect key="frame" x="162.5" y="0.0" width="154.5" height="91"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gue-1o-O43">
+                                                <rect key="frame" x="5" y="0.0" width="144.5" height="91"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="l80-Qd-F5O">
+                                                        <rect key="frame" x="0.0" y="20.5" width="70" height="50"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="شروق القمر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="H34-AJ-KjY">
+                                                        <rect key="frame" x="75" y="35.5" width="69.5" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="secondaryBackground"/>
+                                        <constraints>
+                                            <constraint firstItem="Gue-1o-O43" firstAttribute="top" secondItem="wW1-3i-7d9" secondAttribute="top" id="C1z-xH-MzJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gue-1o-O43" secondAttribute="trailing" constant="5" id="CKQ-Md-j8p"/>
+                                            <constraint firstItem="Gue-1o-O43" firstAttribute="leading" secondItem="wW1-3i-7d9" secondAttribute="leading" constant="5" id="cef-gC-FWm"/>
+                                            <constraint firstAttribute="bottom" secondItem="Gue-1o-O43" secondAttribute="bottom" id="qyK-bn-q6J"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cof-WW-M6e" firstAttribute="top" secondItem="XiH-JL-9ry" secondAttribute="top" id="9FW-KJ-4tZ"/>
+                            <constraint firstAttribute="bottom" secondItem="cof-WW-M6e" secondAttribute="bottom" id="9lj-9z-Oh6"/>
+                            <constraint firstItem="cof-WW-M6e" firstAttribute="leading" secondItem="XiH-JL-9ry" secondAttribute="leading" id="Kx9-6H-QVZ"/>
+                            <constraint firstAttribute="trailing" secondItem="cof-WW-M6e" secondAttribute="trailing" id="mKi-1D-Njk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="XiH-JL-9ry" secondAttribute="bottom" constant="5" id="WDL-hl-hXq"/>
+                    <constraint firstItem="XiH-JL-9ry" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ZNN-CI-1Fc"/>
+                    <constraint firstAttribute="trailing" secondItem="XiH-JL-9ry" secondAttribute="trailing" constant="20" id="doC-7m-piy"/>
+                    <constraint firstItem="XiH-JL-9ry" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lHU-Y4-YOL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="labelSunrise" destination="l80-Qd-F5O" id="4vE-fM-eRD"/>
+                <outlet property="labelSunset" destination="73K-gD-DfN" id="Xo6-vD-69K"/>
+            </connections>
+            <point key="canvasLocation" x="164.49275362318841" y="102.79017857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="primary">
+            <color red="0.51764705882352946" green="0.10196078431372549" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

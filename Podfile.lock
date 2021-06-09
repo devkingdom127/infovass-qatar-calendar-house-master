@@ -1,0 +1,128 @@
+PODS:
+  - Adhan (1.1.0)
+  - Alamofire (5.2.1)
+  - AppCenter (3.1.1):
+    - AppCenter/Analytics (= 3.1.1)
+    - AppCenter/Crashes (= 3.1.1)
+  - AppCenter/Analytics (3.1.1):
+    - AppCenter/Core
+  - AppCenter/Core (3.1.1)
+  - AppCenter/Crashes (3.1.1):
+    - AppCenter/Core
+  - CountdownLabel (4.0.1)
+  - DLRadioButton (1.4.12)
+  - Gedatsu (1.0.5)
+  - IQKeyboardManagerSwift (6.5.5)
+  - JTAppleCalendar (8.0.3)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - KRActivityIndicatorView (3.0.5)
+  - KRProgressHUD (3.4.5):
+    - KRActivityIndicatorView (= 3.0.5)
+  - Loaf (0.5.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - OneSignal (2.12.6)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+  - R.swift (5.1.0):
+    - R.swift.Library (~> 5.1.0)
+  - R.swift.Library (5.1.0)
+  - ReadMoreTextView (3.0.1)
+  - SideMenu (6.5.0)
+  - SRCountdownTimer (1.1)
+  - StorageManager (0.1.7)
+  - WoodPeckeriOS (1.2.4)
+
+DEPENDENCIES:
+  - Adhan (~> 1.1.0)
+  - AppCenter
+  - CountdownLabel (from `https://github.com/mushthak/CountdownLabel.git`, branch `bugfix/expression`)
+  - DLRadioButton
+  - Gedatsu
+  - IQKeyboardManagerSwift (~> 6.5.5)
+  - JTAppleCalendar (~> 8.0.3)
+  - Kingfisher (~> 5.13.0)
+  - KRProgressHUD (~> 3.4.5)
+  - Loaf (~> 0.5.0)
+  - Moya (~> 14.0.0)
+  - OneSignal
+  - PromiseKit (~> 6.13.1)
+  - R.swift (~> 5.1.0)
+  - ReadMoreTextView (~> 3.0.1)
+  - SideMenu (~> 6.5.0)
+  - SRCountdownTimer
+  - StorageManager (~> 0.1.7)
+  - WoodPeckeriOS
+
+SPEC REPOS:
+  trunk:
+    - Adhan
+    - Alamofire
+    - AppCenter
+    - DLRadioButton
+    - Gedatsu
+    - IQKeyboardManagerSwift
+    - JTAppleCalendar
+    - Kingfisher
+    - KRActivityIndicatorView
+    - KRProgressHUD
+    - Loaf
+    - Moya
+    - OneSignal
+    - PromiseKit
+    - R.swift
+    - R.swift.Library
+    - ReadMoreTextView
+    - SideMenu
+    - SRCountdownTimer
+    - StorageManager
+    - WoodPeckeriOS
+
+EXTERNAL SOURCES:
+  CountdownLabel:
+    :branch: bugfix/expression
+    :git: https://github.com/mushthak/CountdownLabel.git
+
+CHECKOUT OPTIONS:
+  CountdownLabel:
+    :commit: 800205db7400624568be2711986bda7a66fdfde1
+    :git: https://github.com/mushthak/CountdownLabel.git
+
+SPEC CHECKSUMS:
+  Adhan: 3484020e8b2e7ca6f9f27317307416611ce7d848
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  AppCenter: 513d32888854d67d8cfbd3a8db16aeb5fb2e2a75
+  CountdownLabel: c9975e3f329140b5e7d1f45cd63b1300badd1712
+  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  Gedatsu: 09222eaf87b70a9dc76a094b2ccf0d948f39f1a8
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  JTAppleCalendar: 932cadea40b1051beab10f67843451d48ba16c99
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  KRActivityIndicatorView: 912bc0413d98340f384b12a4e1e6aa8f42fb377d
+  KRProgressHUD: df4cdc3a1baf708d4276a089ee34d133fa9a6f3e
+  Loaf: 0800b444431366bc395d54267975d4ad4ad5c99c
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  OneSignal: a6df91542d1cf133b9dd19d89f2b533d8f2d3163
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  R.swift: 8cbc4fc69b740305b6a17c8a8ed968eb788962d9
+  R.swift.Library: fa85ce1e0d0b7e818cd9e080df910ba54d2776cc
+  ReadMoreTextView: 19147adf93abce6d7271e14031a00303fe28720d
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  SRCountdownTimer: 9c92e444b5403c92f01dd6610299b8c634bc8562
+  StorageManager: 5f9fef3df4af40bc6fb4d972da5da060a38f5972
+  WoodPeckeriOS: bff163c8c996efd45e2fb562f68f6db7f901ac90
+
+PODFILE CHECKSUM: 85cad65d9f804fb194fa4a2a5e6e470e83b2b111
+
+COCOAPODS: 1.9.3

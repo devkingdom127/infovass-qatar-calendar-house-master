@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Q2E-AH-han">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Contact UsVC-->
+        <scene sceneID="xi3-a8-U6J">
+            <objects>
+                <viewController id="Q2E-AH-han" customClass="ContactUsVC" customModule="التقويم_القطري" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="13R-aj-YcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark_bg" translatesAutoresizingMaskIntoConstraints="NO" id="YZK-OD-MxI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1W-wn-D8W">
+                                <rect key="frame" x="20" y="44" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="2ox-JE-3QB"/>
+                                    <constraint firstAttribute="width" secondItem="Y1W-wn-D8W" secondAttribute="height" multiplier="1:1" id="Kz7-Au-VbV"/>
+                                </constraints>
+                                <color key="tintColor" name="backColor"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="onCloseButtonPressed:" destination="Q2E-AH-han" eventType="touchUpInside" id="dGT-br-Oio"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWL-V8-Cf8">
+                                <rect key="frame" x="0.0" y="321" width="414" height="585"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_watermark" translatesAutoresizingMaskIntoConstraints="NO" id="wYu-BM-Nmd">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="585"/>
+                                        <color key="backgroundColor" name="secondaryBackground"/>
+                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAn-1O-ne1">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="585"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uWl-GH-sUp">
+                                                <rect key="frame" x="20" y="20" width="374" height="311"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="للاقتراحات والتواصل" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ULf-6O-014">
+                                                        <rect key="frame" x="10" y="0.0" width="354" height="27"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="23"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="TcN-OA-UVb">
+                                                        <rect key="frame" x="177.5" y="27" width="19" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                        <color key="textColor" name="darkGray"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="GI1-vY-NIL">
+                                                        <rect key="frame" x="187" y="27" width="0.0" height="0.0"/>
+                                                        <subviews>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIm-c9-tnA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="5vj-NA-lXA"/>
+                                                                    <constraint firstAttribute="width" secondItem="iIm-c9-tnA" secondAttribute="height" id="9P4-c6-NnI"/>
+                                                                </constraints>
+                                                                <state key="normal" image="facebook"/>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mn-Mi-dLV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                                                <state key="normal" image="twitter"/>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ge-9C-kL2">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                                                <state key="normal" image="instagram"/>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7Q-21-E7i">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                                                <state key="normal" image="map_icon"/>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5e-H4-23D">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                                                <state key="normal" image="website_icon"/>
+                                                            </button>
+                                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wb-fS-tpw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="60"/>
+                                                                <state key="normal" image="youtube_icon"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TIr-NH-yw8">
+                                                        <rect key="frame" x="21.5" y="27" width="331" height="284"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qmM-UM-R7a">
+                                                                <rect key="frame" x="0.0" y="0.0" width="331" height="71"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Aeq-5W-R5f">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="71"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="تليفون" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpm-Ak-M9q">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="21"/>
+                                                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="18"/>
+                                                                                <color key="textColor" name="primary"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gC3-sT-d2K">
+                                                                                <rect key="frame" x="0.0" y="21" width="286" height="50"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="IFl-P3-atv">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="274" height="50"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KSC-Tw-bkh">
+                                                                                                <rect key="frame" x="226" y="0.0" width="48" height="50"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" contentMode="left" text="...." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="c3X-yc-EDN">
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="19" height="50"/>
+                                                                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                                                                        <color key="textColor" name="darkGray"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                    </label>
+                                                                                                    <label opaque="NO" contentMode="left" text="...." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="xFX-8Q-3aQ">
+                                                                                                        <rect key="frame" x="29" y="0.0" width="19" height="50"/>
+                                                                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                                                                        <color key="textColor" name="darkGray"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                    </stackView>
+                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01d-IK-Un4">
+                                                                                        <rect key="frame" x="284" y="0.0" width="2" height="50"/>
+                                                                                        <color key="backgroundColor" name="primary"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="2" id="lgK-l7-15t"/>
+                                                                                        </constraints>
+                                                                                    </view>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="ycr-bh-0pJ">
+                                                                        <rect key="frame" x="296" y="0.0" width="35" height="35"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="35" id="a2n-vY-v75"/>
+                                                                            <constraint firstAttribute="width" secondItem="ycr-bh-0pJ" secondAttribute="height" id="brk-j0-bMv"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cdU-0d-FdP">
+                                                                <rect key="frame" x="0.0" y="71" width="331" height="71"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="A5y-Rq-rnz">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="71"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="فاكس" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiz-XV-kLY">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="21"/>
+                                                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="18"/>
+                                                                                <color key="textColor" name="primary"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oYf-TA-wAr">
+                                                                                <rect key="frame" x="0.0" y="21" width="286" height="50"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="...." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="o74-Ay-5AP">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="274" height="50"/>
+                                                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                                                        <color key="textColor" name="darkGray"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3a-1a-Rdw">
+                                                                                        <rect key="frame" x="284" y="0.0" width="2" height="50"/>
+                                                                                        <color key="backgroundColor" name="primary"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="2" id="XS0-QO-6KS"/>
+                                                                                        </constraints>
+                                                                                    </view>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fax" translatesAutoresizingMaskIntoConstraints="NO" id="jcR-io-ncv">
+                                                                        <rect key="frame" x="296" y="0.0" width="35" height="35"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="35" id="TpE-Wy-db8"/>
+                                                                            <constraint firstAttribute="width" secondItem="jcR-io-ncv" secondAttribute="height" id="uaz-Gt-gjU"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mg6-IB-Fc5">
+                                                                <rect key="frame" x="0.0" y="142" width="331" height="71"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uYL-v2-TuV">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="71"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="البريد الالكتروني" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQk-te-pE1">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="21"/>
+                                                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="18"/>
+                                                                                <color key="textColor" name="primary"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tGt-rH-0Dy">
+                                                                                <rect key="frame" x="0.0" y="21" width="286" height="50"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" contentMode="left" text="...." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fAL-2Y-RzW">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="274" height="50"/>
+                                                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                                                        <color key="textColor" name="darkGray"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hog-qG-rV6">
+                                                                                        <rect key="frame" x="284" y="0.0" width="2" height="50"/>
+                                                                                        <color key="backgroundColor" name="primary"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="2" id="RzC-TH-KgO"/>
+                                                                                        </constraints>
+                                                                                    </view>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fax" translatesAutoresizingMaskIntoConstraints="NO" id="Xt5-eP-qAv">
+                                                                        <rect key="frame" x="296" y="0.0" width="35" height="35"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="Xt5-eP-qAv" secondAttribute="height" id="S2m-oi-TXV"/>
+                                                                            <constraint firstAttribute="width" constant="35" id="pgm-Ab-5Z2"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2w6-9r-j1W">
+                                                                <rect key="frame" x="0.0" y="213" width="331" height="71"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BtA-vj-gsA">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="71"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="العنوان" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fjT-Vh-wM7">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="286" height="21"/>
+                                                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="18"/>
+                                                                                <color key="textColor" name="primary"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nPG-z5-88D">
+                                                                                <rect key="frame" x="0.0" y="21" width="286" height="50"/>
+                                                                                <subviews>
+                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="...." textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="9H5-s7-XJW">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="274" height="50"/>
+                                                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                                                        <color key="textColor" name="darkGray"/>
+                                                                                        <nil key="highlightedColor"/>
+                                                                                    </label>
+                                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVS-3P-n1v">
+                                                                                        <rect key="frame" x="284" y="0.0" width="2" height="50"/>
+                                                                                        <color key="backgroundColor" name="primary"/>
+                                                                                        <constraints>
+                                                                                            <constraint firstAttribute="width" constant="2" id="IZA-R8-RTt"/>
+                                                                                        </constraints>
+                                                                                    </view>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="address_icon" translatesAutoresizingMaskIntoConstraints="NO" id="SMl-Zp-KMh">
+                                                                        <rect key="frame" x="296" y="0.0" width="35" height="35"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="SMl-Zp-KMh" secondAttribute="height" id="S6e-Eh-3qd"/>
+                                                                            <constraint firstAttribute="width" constant="35" id="clh-Kk-LUd"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="cdU-0d-FdP" firstAttribute="width" secondItem="qmM-UM-R7a" secondAttribute="width" id="KM3-Sz-jfO"/>
+                                                            <constraint firstItem="mg6-IB-Fc5" firstAttribute="width" secondItem="cdU-0d-FdP" secondAttribute="width" id="ghm-gM-Xfb"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ULf-6O-014" secondAttribute="trailing" constant="10" id="7HW-Hz-UOt"/>
+                                                    <constraint firstItem="ULf-6O-014" firstAttribute="leading" secondItem="uWl-GH-sUp" secondAttribute="leading" constant="10" id="t7m-6I-5vE"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="uWl-GH-sUp" firstAttribute="top" secondItem="MAn-1O-ne1" secondAttribute="top" constant="20" id="2lo-Fp-Zdc"/>
+                                            <constraint firstItem="uWl-GH-sUp" firstAttribute="leading" secondItem="MAn-1O-ne1" secondAttribute="leading" constant="20" id="E9I-7v-9fI"/>
+                                            <constraint firstAttribute="trailing" secondItem="uWl-GH-sUp" secondAttribute="trailing" constant="20" id="EHT-OT-v4g"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uWl-GH-sUp" secondAttribute="bottom" constant="8" id="HHk-Mp-fm1"/>
+                                            <constraint firstItem="uWl-GH-sUp" firstAttribute="top" secondItem="9be-dn-kaN" secondAttribute="top" constant="20" id="RoM-mm-ihI"/>
+                                            <constraint firstItem="uWl-GH-sUp" firstAttribute="leading" secondItem="9be-dn-kaN" secondAttribute="leading" constant="20" id="UI6-sa-rCP"/>
+                                            <constraint firstItem="9be-dn-kaN" firstAttribute="trailing" secondItem="uWl-GH-sUp" secondAttribute="trailing" constant="20" id="URp-kt-Ls7"/>
+                                            <constraint firstItem="uWl-GH-sUp" firstAttribute="centerX" secondItem="MAn-1O-ne1" secondAttribute="centerX" id="kVd-RQ-d6t"/>
+                                            <constraint firstItem="9be-dn-kaN" firstAttribute="bottom" secondItem="uWl-GH-sUp" secondAttribute="bottom" constant="20" id="x0n-YS-ycV"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="9be-dn-kaN"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="m39-vH-Epp"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" name="secondaryBackground"/>
+                                <constraints>
+                                    <constraint firstItem="wYu-BM-Nmd" firstAttribute="top" secondItem="MAn-1O-ne1" secondAttribute="top" id="GuK-im-lcL"/>
+                                    <constraint firstItem="wYu-BM-Nmd" firstAttribute="leading" secondItem="MAn-1O-ne1" secondAttribute="leading" id="HRO-DH-yud"/>
+                                    <constraint firstItem="wYu-BM-Nmd" firstAttribute="trailing" secondItem="MAn-1O-ne1" secondAttribute="trailing" id="P3X-QH-7c3"/>
+                                    <constraint firstItem="MAn-1O-ne1" firstAttribute="top" secondItem="pWL-V8-Cf8" secondAttribute="top" id="Tm0-jt-XgF"/>
+                                    <constraint firstAttribute="bottom" secondItem="MAn-1O-ne1" secondAttribute="bottom" id="UEH-a8-IDN"/>
+                                    <constraint firstItem="wYu-BM-Nmd" firstAttribute="bottom" secondItem="MAn-1O-ne1" secondAttribute="bottom" id="ZpN-6w-X3Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="MAn-1O-ne1" secondAttribute="trailing" id="b0a-wG-zbA"/>
+                                    <constraint firstItem="TIr-NH-yw8" firstAttribute="width" secondItem="pWL-V8-Cf8" secondAttribute="width" multiplier="0.8" id="hyx-js-q0o"/>
+                                    <constraint firstItem="MAn-1O-ne1" firstAttribute="leading" secondItem="pWL-V8-Cf8" secondAttribute="leading" id="ifc-Ja-WX8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ktg-74-T3A">
+                                <rect key="frame" x="10" y="87" width="394" height="224"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qTm-Rw-jjt">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="165.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="V0w-Za-qoK"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="دار التقويم القطري Qatar Calender House" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="PsA-hY-Mw6">
+                                        <rect key="frame" x="0.0" y="165.5" width="394" height="58.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4RS-oF-MHz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y1W-wn-D8W" firstAttribute="top" secondItem="4RS-oF-MHz" secondAttribute="top" id="1wR-0r-vT1"/>
+                            <constraint firstItem="Ktg-74-T3A" firstAttribute="height" secondItem="13R-aj-YcJ" secondAttribute="height" multiplier="0.25" id="6lh-gI-lin"/>
+                            <constraint firstItem="YZK-OD-MxI" firstAttribute="top" secondItem="13R-aj-YcJ" secondAttribute="top" id="I3v-Ay-fo1"/>
+                            <constraint firstAttribute="trailing" secondItem="YZK-OD-MxI" secondAttribute="trailing" id="SJt-3g-bRT"/>
+                            <constraint firstItem="4RS-oF-MHz" firstAttribute="trailing" secondItem="Ktg-74-T3A" secondAttribute="trailing" constant="10" id="ZuL-Y2-yzT"/>
+                            <constraint firstItem="Y1W-wn-D8W" firstAttribute="leading" secondItem="4RS-oF-MHz" secondAttribute="leading" constant="20" id="a2i-5n-PJx"/>
+                            <constraint firstAttribute="bottom" secondItem="YZK-OD-MxI" secondAttribute="bottom" id="aZJ-mE-Fzm"/>
+                            <constraint firstItem="pWL-V8-Cf8" firstAttribute="leading" secondItem="4RS-oF-MHz" secondAttribute="leading" id="eyC-x3-Kry"/>
+                            <constraint firstItem="Y1W-wn-D8W" firstAttribute="width" secondItem="Y1W-wn-D8W" secondAttribute="height" multiplier="1:1" id="f8m-HO-Stz"/>
+                            <constraint firstItem="Ktg-74-T3A" firstAttribute="top" secondItem="Y1W-wn-D8W" secondAttribute="bottom" constant="8" id="faG-bk-rcB"/>
+                            <constraint firstAttribute="bottom" secondItem="pWL-V8-Cf8" secondAttribute="bottom" constant="-10" id="ixs-90-X1a"/>
+                            <constraint firstItem="Ktg-74-T3A" firstAttribute="leading" secondItem="4RS-oF-MHz" secondAttribute="leading" constant="10" id="pQS-Vh-ULp"/>
+                            <constraint firstItem="4RS-oF-MHz" firstAttribute="trailing" secondItem="pWL-V8-Cf8" secondAttribute="trailing" id="qsI-1e-ahB"/>
+                            <constraint firstItem="YZK-OD-MxI" firstAttribute="leading" secondItem="13R-aj-YcJ" secondAttribute="leading" id="r4P-R0-R2b"/>
+                            <constraint firstItem="pWL-V8-Cf8" firstAttribute="top" secondItem="Ktg-74-T3A" secondAttribute="bottom" constant="10" id="skW-ua-yae"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonFacebook" destination="iIm-c9-tnA" id="n9l-gT-GWt"/>
+                        <outlet property="buttonInstagram" destination="6Ge-9C-kL2" id="CEb-y1-aVZ"/>
+                        <outlet property="buttonMap" destination="d7Q-21-E7i" id="AxB-fE-D5E"/>
+                        <outlet property="buttonTwitter" destination="2mn-Mi-dLV" id="HNA-zE-cMl"/>
+                        <outlet property="buttonWebsite" destination="w5e-H4-23D" id="QBh-31-QFH"/>
+                        <outlet property="buttonYoutube" destination="9Wb-fS-tpw" id="sXp-F5-90U"/>
+                        <outlet property="labelAddress" destination="9H5-s7-XJW" id="XU3-lP-b3k"/>
+                        <outlet property="labelEmail" destination="fAL-2Y-RzW" id="WSP-He-cF3"/>
+                        <outlet property="labelFax" destination="o74-Ay-5AP" id="ez6-ZS-tbs"/>
+                        <outlet property="labelMailBox" destination="TcN-OA-UVb" id="I8q-lE-Wyh"/>
+                        <outlet property="labelPhone" destination="c3X-yc-EDN" id="Kkt-yg-XhM"/>
+                        <outlet property="labelTelephone" destination="xFX-8Q-3aQ" id="sEZ-eZ-U66"/>
+                        <outlet property="viewAddress" destination="2w6-9r-j1W" id="Xod-Ts-rRH"/>
+                        <outlet property="viewEmail" destination="mg6-IB-Fc5" id="DgW-ws-4m7"/>
+                        <outlet property="viewFax" destination="cdU-0d-FdP" id="gWa-hI-VhO"/>
+                        <outlet property="viewPhone" destination="qmM-UM-R7a" id="yaH-Ix-dv0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7OD-Kt-9rQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155.07246376811597" y="143.97321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="address_icon" width="80" height="80"/>
+        <image name="back" width="22" height="22"/>
+        <image name="dark_bg" width="360" height="640.5"/>
+        <image name="facebook" width="15.5" height="15.5"/>
+        <image name="fax" width="27" height="27"/>
+        <image name="instagram" width="15.5" height="15.5"/>
+        <image name="logo_watermark" width="1080" height="1061.5"/>
+        <image name="map_icon" width="19.5" height="19"/>
+        <image name="phone" width="27" height="27"/>
+        <image name="splash_logo" width="146" height="146"/>
+        <image name="twitter" width="19" height="15.5"/>
+        <image name="website_icon" width="16" height="16"/>
+        <image name="youtube_icon" width="16" height="16"/>
+        <namedColor name="backColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="darkGray">
+            <color red="0.3411764705882353" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.51764705882352946" green="0.10196078431372549" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

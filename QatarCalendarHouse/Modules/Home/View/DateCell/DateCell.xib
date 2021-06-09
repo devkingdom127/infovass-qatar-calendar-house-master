@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Black.ttf">
+            <string>Cairo-Black</string>
+        </array>
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeDateCell" rowHeight="325" id="KGk-i7-Jjw" customClass="DateCell" customModule="التقويم_القطري" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="577" height="325"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="577" height="325"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKa-QH-Gjz">
+                        <rect key="frame" x="20" y="5" width="537" height="232.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nsf-Uc-KAR">
+                                <rect key="frame" x="10" y="5" width="517" height="222.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CvB-qg-3fC">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="222.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciu-Pd-qDx">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="74"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="35"/>
+                                                <color key="textColor" name="primary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="zNr-wA-Zel">
+                                                <rect key="frame" x="0.0" y="74" width="167" height="74.5"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Black" family="Cairo" pointSize="17"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GI-af-bej">
+                                                <rect key="frame" x="0.0" y="148.5" width="167" height="74"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="30"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="p2x-BY-aKu">
+                                        <rect key="frame" x="175" y="0.0" width="167" height="222.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Kti-QH-imv">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="179.5"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="اليوم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J5u-7f-wSV">
+                                                <rect key="frame" x="0.0" y="179.5" width="167" height="43"/>
+                                                <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="30"/>
+                                                <color key="textColor" name="primary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZkG-FT-Pjv">
+                                        <rect key="frame" x="350" y="0.0" width="167" height="222.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G3j-Ee-kbx">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="74"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="35"/>
+                                                <color key="textColor" name="primary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="2HS-A6-ZrW">
+                                                <rect key="frame" x="0.0" y="74" width="167" height="74.5"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Black" family="Cairo" pointSize="17"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07r-yg-Oj7">
+                                                <rect key="frame" x="0.0" y="148.5" width="167" height="74"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="30"/>
+                                                <color key="textColor" name="black"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="secondaryBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jKa-QH-Gjz" secondAttribute="height" multiplier="3:1.3" id="2Pf-QA-px5"/>
+                            <constraint firstAttribute="trailing" secondItem="Nsf-Uc-KAR" secondAttribute="trailing" constant="10" id="2pX-T3-X6r"/>
+                            <constraint firstItem="Nsf-Uc-KAR" firstAttribute="top" secondItem="jKa-QH-Gjz" secondAttribute="top" constant="5" id="6XH-J0-Lb5"/>
+                            <constraint firstItem="Nsf-Uc-KAR" firstAttribute="leading" secondItem="jKa-QH-Gjz" secondAttribute="leading" constant="10" id="Un4-gK-iwU"/>
+                            <constraint firstAttribute="bottom" secondItem="Nsf-Uc-KAR" secondAttribute="bottom" constant="5" id="up9-oU-1mi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="jKa-QH-Gjz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="24U-pP-gST"/>
+                    <constraint firstAttribute="bottom" secondItem="jKa-QH-Gjz" secondAttribute="bottom" constant="5" id="KrL-SK-Xja"/>
+                    <constraint firstItem="jKa-QH-Gjz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NZn-V2-KtY"/>
+                    <constraint firstItem="jKa-QH-Gjz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Xsn-8x-rsK"/>
+                    <constraint firstItem="jKa-QH-Gjz" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gIR-b3-clG"/>
+                    <constraint firstAttribute="trailing" secondItem="jKa-QH-Gjz" secondAttribute="trailing" constant="20" id="lbn-3c-RGG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageLogo" destination="Kti-QH-imv" id="M62-9E-pll"/>
+                <outlet property="labelDayGregorian" destination="ciu-Pd-qDx" id="9MQ-gQ-K3R"/>
+                <outlet property="labelDayHijri" destination="G3j-Ee-kbx" id="bmH-um-MOl"/>
+                <outlet property="labelDayOfWeek" destination="J5u-7f-wSV" id="OzZ-9W-eML"/>
+                <outlet property="labelMonthGregorian" destination="zNr-wA-Zel" id="Fsz-sS-VSg"/>
+                <outlet property="labelMonthHijri" destination="2HS-A6-ZrW" id="d1a-dD-wJc"/>
+                <outlet property="labelYearGregorian" destination="3GI-af-bej" id="336-wR-OAV"/>
+                <outlet property="labelYearHijri" destination="07r-yg-Oj7" id="Lug-QY-mzD"/>
+            </connections>
+            <point key="canvasLocation" x="322.46376811594206" y="236.04910714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="splash_logo" width="146" height="146"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.51764705882352946" green="0.10196078431372549" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MonthlyCalendarPrayerTimesCell" rowHeight="104" id="HJr-Zd-RCt" customClass="MonthlyCalendarPrayerTimesCell" customModule="التقويم_القطري" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HJr-Zd-RCt" id="5km-KH-Ngh">
+                <rect key="frame" x="0.0" y="0.0" width="475" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="9TU-Rg-Nrc">
+                        <rect key="frame" x="8" y="8" width="401.5" height="96"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Y0g-yJ-uuO">
+                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="96"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" name="black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="88c-W6-Bfg">
+                                <rect key="frame" x="67.5" y="0.0" width="65" height="96"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" name="black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="PnO-JJ-Lk0">
+                                <rect key="frame" x="134.5" y="0.0" width="65.5" height="96"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" name="black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="L4f-DS-v7z">
+                                <rect key="frame" x="202" y="0.0" width="65" height="96"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" name="black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="bVt-Cf-jgP">
+                                <rect key="frame" x="269" y="0.0" width="65.5" height="96"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" name="black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="PYz-nv-gN1">
+                                <rect key="frame" x="336.5" y="0.0" width="65" height="96"/>
+                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                                <color key="textColor" name="black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="254" verticalHuggingPriority="254" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Rf7-ss-wa6">
+                        <rect key="frame" x="419.5" y="8" width="47.5" height="96"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="15"/>
+                        <color key="textColor" name="black"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2JB-ME-A1N">
+                        <rect key="frame" x="413.5" y="0.0" width="1" height="104"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="2Aq-By-uIY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rf7-ss-wa6" firstAttribute="bottom" secondItem="9TU-Rg-Nrc" secondAttribute="bottom" id="1CL-ba-vjw"/>
+                    <constraint firstItem="Rf7-ss-wa6" firstAttribute="top" secondItem="9TU-Rg-Nrc" secondAttribute="top" id="D1i-eZ-KCc"/>
+                    <constraint firstItem="2JB-ME-A1N" firstAttribute="trailing" secondItem="PYz-nv-gN1" secondAttribute="trailing" constant="5" id="Dgy-nB-YGi"/>
+                    <constraint firstAttribute="bottom" secondItem="2JB-ME-A1N" secondAttribute="bottom" id="LaL-MJ-Tyr"/>
+                    <constraint firstItem="9TU-Rg-Nrc" firstAttribute="top" secondItem="5km-KH-Ngh" secondAttribute="top" constant="8" id="SPG-W0-0TU"/>
+                    <constraint firstAttribute="trailing" secondItem="Rf7-ss-wa6" secondAttribute="trailing" constant="8" id="USk-VY-fxL"/>
+                    <constraint firstItem="Rf7-ss-wa6" firstAttribute="width" secondItem="5km-KH-Ngh" secondAttribute="width" multiplier="0.1" id="WKy-6T-IsT"/>
+                    <constraint firstItem="Rf7-ss-wa6" firstAttribute="leading" secondItem="9TU-Rg-Nrc" secondAttribute="trailing" constant="10" id="Wrp-p3-kbr"/>
+                    <constraint firstItem="2JB-ME-A1N" firstAttribute="top" secondItem="5km-KH-Ngh" secondAttribute="top" id="tXO-oA-lGd"/>
+                    <constraint firstAttribute="bottom" secondItem="9TU-Rg-Nrc" secondAttribute="bottom" id="uyH-R5-98Q"/>
+                    <constraint firstItem="9TU-Rg-Nrc" firstAttribute="leading" secondItem="5km-KH-Ngh" secondAttribute="leading" constant="8" id="wX7-Xn-u5S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="GVw-KS-u3X"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="labelAsr" destination="PnO-JJ-Lk0" id="ydo-bd-yaR"/>
+                <outlet property="labelDuhur" destination="L4f-DS-v7z" id="bBB-2n-ymE"/>
+                <outlet property="labelFajer" destination="PYz-nv-gN1" id="1gs-0E-06r"/>
+                <outlet property="labelIsha" destination="Y0g-yJ-uuO" id="R5G-Uo-j8S"/>
+                <outlet property="labelMagrib" destination="88c-W6-Bfg" id="J5X-dq-6ML"/>
+                <outlet property="labelNumber" destination="Rf7-ss-wa6" id="jwm-4f-j1C"/>
+                <outlet property="labelSunrise" destination="bVt-Cf-jgP" id="awX-WB-spX"/>
+                <outlet property="viewDivider" destination="2JB-ME-A1N" id="jve-jg-g7k"/>
+                <outletCollection property="labels" destination="PYz-nv-gN1" collectionClass="NSMutableArray" id="7sY-pb-Am7"/>
+                <outletCollection property="labels" destination="bVt-Cf-jgP" collectionClass="NSMutableArray" id="GGn-nc-2Md"/>
+                <outletCollection property="labels" destination="L4f-DS-v7z" collectionClass="NSMutableArray" id="iMZ-3T-Py8"/>
+                <outletCollection property="labels" destination="PnO-JJ-Lk0" collectionClass="NSMutableArray" id="c0Y-ht-XRv"/>
+                <outletCollection property="labels" destination="88c-W6-Bfg" collectionClass="NSMutableArray" id="LG5-Sl-mLa"/>
+                <outletCollection property="labels" destination="Rf7-ss-wa6" collectionClass="NSMutableArray" id="3Yt-XS-83X"/>
+                <outletCollection property="labels" destination="Y0g-yJ-uuO" collectionClass="NSMutableArray" id="YD6-cH-h8t"/>
+            </connections>
+            <point key="canvasLocation" x="397.82608695652175" y="157.36607142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,3020 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E9A8703AE6E9CBF9D37FC0C /* Pods_PrayersExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C58669F06E692C5C29FB273 /* Pods_PrayersExtension.framework */; };
+		920D61AD241F95000043EC09 /* MonthlyCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D61AC241F95000043EC09 /* MonthlyCalendarVC.swift */; };
+		920D61AF241F95440043EC09 /* MonthlyCalendarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D61AE241F95440043EC09 /* MonthlyCalendarCoordinator.swift */; };
+		920D61B1241F95AA0043EC09 /* MonthlyCalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D61B0241F95AA0043EC09 /* MonthlyCalendarModel.swift */; };
+		920D61B3241F9A1D0043EC09 /* MonthlyCalendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920D61B2241F9A1D0043EC09 /* MonthlyCalendar.storyboard */; };
+		921623E8242ADE1D00D20B4C /* RamadanTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921623E7242ADE1D00D20B4C /* RamadanTableDataSource.swift */; };
+		921623EA242ADE7600D20B4C /* RamadanTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921623E9242ADE7600D20B4C /* RamadanTableDelegate.swift */; };
+		921623EE242AE1EB00D20B4C /* RamadanPrayersTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921623EC242AE1EB00D20B4C /* RamadanPrayersTimeCell.swift */; };
+		921623EF242AE1EB00D20B4C /* RamadanPrayersTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921623ED242AE1EB00D20B4C /* RamadanPrayersTimeCell.xib */; };
+		9221DD5023FF0EEF00C0591C /* MasjidImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221DD4E23FF0EEF00C0591C /* MasjidImageCell.swift */; };
+		9221DD5123FF0EEF00C0591C /* MasjidImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9221DD4F23FF0EEF00C0591C /* MasjidImageCell.xib */; };
+		9221DD5523FF123200C0591C /* PrayerTimesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221DD5323FF123200C0591C /* PrayerTimesCell.swift */; };
+		9221DD5623FF123200C0591C /* PrayerTimesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9221DD5423FF123200C0591C /* PrayerTimesCell.xib */; };
+		9221DD5A24000A3300C0591C /* SeasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221DD5824000A3300C0591C /* SeasonCell.swift */; };
+		9221DD5B24000A3300C0591C /* SeasonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9221DD5924000A3300C0591C /* SeasonCell.xib */; };
+		9221DD5F24000A9B00C0591C /* DayContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221DD5D24000A9B00C0591C /* DayContentCell.swift */; };
+		9221DD6024000A9B00C0591C /* DayContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9221DD5E24000A9B00C0591C /* DayContentCell.xib */; };
+		9221DD6424000BA300C0591C /* DayPhenomenaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9221DD6224000BA300C0591C /* DayPhenomenaCell.swift */; };
+		9221DD6524000BA300C0591C /* DayPhenomenaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9221DD6324000BA300C0591C /* DayPhenomenaCell.xib */; };
+		922AF364242AF17E00EC2352 /* AstrologicalDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922AF363242AF17E00EC2352 /* AstrologicalDetailsVC.swift */; };
+		9235440524058BC9001007A1 /* Borg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9235440424058BC9001007A1 /* Borg.swift */; };
+		92354407240590DE001007A1 /* Tala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92354406240590DE001007A1 /* Tala.swift */; };
+		9235440F2405FF4F001007A1 /* VacationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9235440E2405FF4F001007A1 /* VacationsCoordinator.swift */; };
+		923544112405FF84001007A1 /* VacationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923544102405FF84001007A1 /* VacationsVC.swift */; };
+		9235441324060B8A001007A1 /* QiblaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9235441224060B8A001007A1 /* QiblaCoordinator.swift */; };
+		9235441524061207001007A1 /* Vacations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9235441424061207001007A1 /* Vacations.storyboard */; };
+		923544192406205B001007A1 /* VacationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923544172406205B001007A1 /* VacationCell.swift */; };
+		9235441A2406205B001007A1 /* VacationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 923544182406205B001007A1 /* VacationCell.xib */; };
+		924EACEC2442952B0063773F /* CATransitionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924EACEB2442952B0063773F /* CATransitionExtension.swift */; };
+		924EACEF2442E0510063773F /* ContentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924EACEE2442E0510063773F /* ContentStorage.swift */; };
+		924EACF12442E10F0063773F /* QCHContentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924EACF02442E10F0063773F /* QCHContentStorage.swift */; };
+		924EACF824437D110063773F /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF324437D020063773F /* Cairo-Black.ttf */; };
+		924EACF924437D110063773F /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF724437D020063773F /* Cairo-Bold.ttf */; };
+		924EACFA24437D110063773F /* Cairo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF624437D020063773F /* Cairo-ExtraLight.ttf */; };
+		924EACFB24437D110063773F /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF224437D020063773F /* Cairo-Light.ttf */; };
+		924EACFC24437D110063773F /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF524437D020063773F /* Cairo-Regular.ttf */; };
+		924EACFD24437D110063773F /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF424437D020063773F /* Cairo-SemiBold.ttf */; };
+		9263074424106DFF00B176EA /* NotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263074324106DFF00B176EA /* NotificationsModel.swift */; };
+		9263074624107E7400B176EA /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9263074524107E7400B176EA /* Notifications.storyboard */; };
+		9263074824107E8800B176EA /* NotificationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263074724107E8800B176EA /* NotificationsCoordinator.swift */; };
+		9263074B241092F100B176EA /* Adhan-Makkah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9263074A241092F100B176EA /* Adhan-Makkah.mp3 */; };
+		926571972422EA93009C8086 /* MonthlyCalendarTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926571962422EA93009C8086 /* MonthlyCalendarTableDataSource.swift */; };
+		9265719B2422EBEA009C8086 /* MonthlyCalendarPrayerTimesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926571992422EBEA009C8086 /* MonthlyCalendarPrayerTimesCell.swift */; };
+		9265719C2422EBEA009C8086 /* MonthlyCalendarPrayerTimesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9265719A2422EBEA009C8086 /* MonthlyCalendarPrayerTimesCell.xib */; };
+		926571A02422EC3B009C8086 /* MonthlyCalendarPhenomenaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9265719E2422EC3B009C8086 /* MonthlyCalendarPhenomenaCell.swift */; };
+		926571A12422EC3B009C8086 /* MonthlyCalendarPhenomenaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9265719F2422EC3B009C8086 /* MonthlyCalendarPhenomenaCell.xib */; };
+		926571A32422ECEC009C8086 /* MonthlyCalendarTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926571A22422ECEC009C8086 /* MonthlyCalendarTableDelegate.swift */; };
+		926D6DF9240DEC03008D5E37 /* Astronomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926D6DF8240DEC03008D5E37 /* Astronomy.swift */; };
+		926D6DFD240DEDFA008D5E37 /* AstronomiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926D6DFC240DEDFA008D5E37 /* AstronomiesRepository.swift */; };
+		926D6DFF240DEE49008D5E37 /* QCHAstronomiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926D6DFE240DEE49008D5E37 /* QCHAstronomiesRepository.swift */; };
+		926D6E01240DF3F4008D5E37 /* AstronomiesTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926D6E00240DF3F4008D5E37 /* AstronomiesTableDataSource.swift */; };
+		926D6E04240DF463008D5E37 /* AstronomyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926D6E02240DF463008D5E37 /* AstronomyCell.swift */; };
+		926D6E05240DF463008D5E37 /* AstronomyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 926D6E03240DF463008D5E37 /* AstronomyCell.xib */; };
+		9272825223EDB27A00436F42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272825123EDB27A00436F42 /* AppDelegate.swift */; };
+		9272825B23EDB27C00436F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9272825A23EDB27C00436F42 /* Assets.xcassets */; };
+		9272825E23EDB27C00436F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9272825C23EDB27C00436F42 /* LaunchScreen.storyboard */; };
+		9272826723EDC1D600436F42 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272826623EDC1D600436F42 /* ApplicationCoordinator.swift */; };
+		927282CA23EDC21900436F42 /* QCHRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272826A23EDC21900436F42 /* QCHRouter.swift */; };
+		927282CB23EDC21900436F42 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272826B23EDC21900436F42 /* Storyboarded.swift */; };
+		927282CC23EDC21900436F42 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272826C23EDC21900436F42 /* Router.swift */; };
+		927282CD23EDC21900436F42 /* Showable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272826D23EDC21900436F42 /* Showable.swift */; };
+		927282CE23EDC21900436F42 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272826E23EDC21900436F42 /* Coordinator.swift */; };
+		927282CF23EDC21900436F42 /* ADVSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272827023EDC21900436F42 /* ADVSegmentedControl.swift */; };
+		927282D423EDC21900436F42 /* ExtendedNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272827723EDC21900436F42 /* ExtendedNavBarView.swift */; };
+		927282E223EDC21900436F42 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272828C23EDC21900436F42 /* Constants.swift */; };
+		927282EB23EDC21900436F42 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272829823EDC21900436F42 /* UIButtonExtension.swift */; };
+		927282EC23EDC21900436F42 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272829923EDC21900436F42 /* UIColorExtension.swift */; };
+		927282ED23EDC21900436F42 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272829A23EDC21900436F42 /* UITextFieldExtension.swift */; };
+		927282EE23EDC21900436F42 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272829B23EDC21900436F42 /* UILabelExtension.swift */; };
+		927282EF23EDC21900436F42 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272829C23EDC21900436F42 /* IntExtension.swift */; };
+		927282F023EDC21900436F42 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272829D23EDC21900436F42 /* UIViewControllerExtension.swift */; };
+		927282F123EDC21900436F42 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272829E23EDC21900436F42 /* UITableViewExtension.swift */; };
+		927282F223EDC21900436F42 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272829F23EDC21900436F42 /* UIViewExtension.swift */; };
+		927282F323EDC21900436F42 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A023EDC21900436F42 /* UIStackViewExtension.swift */; };
+		927282F423EDC21900436F42 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A123EDC21900436F42 /* UIFontExtension.swift */; };
+		927282F523EDC21900436F42 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A223EDC21900436F42 /* UINavigationControllerExtension.swift */; };
+		927282F623EDC21900436F42 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A323EDC21900436F42 /* StringExtension.swift */; };
+		927282F723EDC21900436F42 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A423EDC21900436F42 /* DictionaryExtension.swift */; };
+		927282F823EDC21900436F42 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A523EDC21900436F42 /* UIImageExtension.swift */; };
+		927282F923EDC21900436F42 /* UITabelViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A623EDC21900436F42 /* UITabelViewCellExtension.swift */; };
+		927282FA23EDC21900436F42 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A723EDC21900436F42 /* DoubleExtension.swift */; };
+		927282FB23EDC21900436F42 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A823EDC21900436F42 /* DateExtension.swift */; };
+		927282FC23EDC21900436F42 /* UINavigationItemExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A923EDC21900436F42 /* UINavigationItemExtention.swift */; };
+		9272830623EDC21900436F42 /* SideMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282B423EDC21900436F42 /* SideMenuItem.swift */; };
+		9272830923EDC21900436F42 /* Sociable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282B923EDC21900436F42 /* Sociable.swift */; };
+		9272830A23EDC21900436F42 /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282BA23EDC21900436F42 /* Loadable.swift */; };
+		9272830B23EDC21900436F42 /* Sharable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282BB23EDC21900436F42 /* Sharable.swift */; };
+		9272832523EDCA8700436F42 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272832423EDCA8700436F42 /* ProgressHUD.swift */; };
+		9272832D23EDCFDA00436F42 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272832C23EDCFDA00436F42 /* R.generated.swift */; };
+		9272835623EDD09000436F42 /* SideMenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272833223EDD09000436F42 /* SideMenuCoordinator.swift */; };
+		9272835723EDD09000436F42 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272833423EDD09000436F42 /* SideMenuVC.swift */; };
+		9272835823EDD09000436F42 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272833623EDD09000436F42 /* SideMenuModel.swift */; };
+		9272835B23EDD09000436F42 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9272833B23EDD09000436F42 /* SideMenu.storyboard */; };
+		9272835C23EDD09000436F42 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9272833D23EDD09000436F42 /* SideMenuCell.xib */; };
+		9272835D23EDD09000436F42 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272833E23EDD09000436F42 /* SideMenuCell.swift */; };
+		9272835E23EDD09000436F42 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272834123EDD09000436F42 /* MainVC.swift */; };
+		9272835F23EDD09000436F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9272834323EDD09000436F42 /* Main.storyboard */; };
+		9272836023EDD09000436F42 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272834623EDD09000436F42 /* HomeCoordinator.swift */; };
+		9272836123EDD09000436F42 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272834823EDD09000436F42 /* HomeVC.swift */; };
+		9272836223EDD09000436F42 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272834A23EDD09000436F42 /* HomeModel.swift */; };
+		9272836523EDD09000436F42 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9272834F23EDD09000436F42 /* Home.storyboard */; };
+		9272837223EEF69300436F42 /* QiblaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272837123EEF69300436F42 /* QiblaVC.swift */; };
+		9272837423F1A01100436F42 /* Qibla.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9272837323F1A01100436F42 /* Qibla.storyboard */; };
+		9272837723F1DAB100436F42 /* Mohammad Bold normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9272837623F1DAB100436F42 /* Mohammad Bold normal.ttf */; };
+		9272837B23F1DE7F00436F42 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272837923F1DE7F00436F42 /* DateCell.swift */; };
+		9272837C23F1DE7F00436F42 /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9272837A23F1DE7F00436F42 /* DateCell.xib */; };
+		9272838423F1F51400436F42 /* HomeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272838323F1F51400436F42 /* HomeTableDataSource.swift */; };
+		9272838623F1F89800436F42 /* HomeTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272838523F1F89800436F42 /* HomeTableDelegate.swift */; };
+		9272838C23F57E8300436F42 /* DayCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272838B23F57E8300436F42 /* DayCalender.swift */; };
+		9272838E23F580FA00436F42 /* Vacation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272838D23F580FA00436F42 /* Vacation.swift */; };
+		9272839023F581AF00436F42 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272838F23F581AF00436F42 /* Capital.swift */; };
+		9272839223F5820D00436F42 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272839123F5820D00436F42 /* Setting.swift */; };
+		9272839423F5828700436F42 /* ContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272839323F5828700436F42 /* ContentItem.swift */; };
+		9272839823F595E000436F42 /* DailyCalendarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272839723F595E000436F42 /* DailyCalendarRepository.swift */; };
+		9272839B23F596A000436F42 /* QCHDailyCalendarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272839A23F596A000436F42 /* QCHDailyCalendarRepository.swift */; };
+		927283A023F948C000436F42 /* QCHRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272839F23F948C000436F42 /* QCHRemoteAPI.swift */; };
+		927283A323F9496D00436F42 /* QCHRemoteAPIImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283A223F9496D00436F42 /* QCHRemoteAPIImpl.swift */; };
+		927283AA23F9823200436F42 /* QCH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283A923F9823200436F42 /* QCH.swift */; };
+		927283AC23F98B7C00436F42 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283AB23F98B7C00436F42 /* Response.swift */; };
+		927283AE23F9950700436F42 /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283AD23F9950700436F42 /* RemoteAPI.swift */; };
+		927283B423F9BCC500436F42 /* AllContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283B323F9BCC500436F42 /* AllContentRepository.swift */; };
+		927283B723F9BD4200436F42 /* QCHAllContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283B623F9BD4200436F42 /* QCHAllContentRepository.swift */; };
+		927283BA23F9BE0900436F42 /* SettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283B923F9BE0900436F42 /* SettingsRepository.swift */; };
+		927283BC23F9BE5900436F42 /* QCHSettingsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283BB23F9BE5900436F42 /* QCHSettingsRepository.swift */; };
+		927283BE23F9BEEB00436F42 /* VecationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283BD23F9BEEB00436F42 /* VecationRepository.swift */; };
+		927283C123F9BF4800436F42 /* QCHVacationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283C023F9BF4800436F42 /* QCHVacationRepository.swift */; };
+		927283C323F9CF1F00436F42 /* PrayTimesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283C223F9CF1F00436F42 /* PrayTimesRepository.swift */; };
+		927283C623F9CFFF00436F42 /* QCHPrayTimesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283C523F9CFFF00436F42 /* QCHPrayTimesRepository.swift */; };
+		927283CB23FCFFF000436F42 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283CA23FCFFF000436F42 /* Version.swift */; };
+		927283D523FEFF7E00436F42 /* BorgAndTalaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283D323FEFF7E00436F42 /* BorgAndTalaCell.swift */; };
+		927283D623FEFF7E00436F42 /* BorgAndTalaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 927283D423FEFF7E00436F42 /* BorgAndTalaCell.xib */; };
+		9288579D244BA73500D267CC /* ApplicationContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288579C244BA73500D267CC /* ApplicationContentModel.swift */; };
+		9288579F244BAE2500D267CC /* TableVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288579E244BAE2500D267CC /* TableVersion.swift */; };
+		928857A1244BE07A00D267CC /* VariacType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928857A0244BE07A00D267CC /* VariacType.swift */; };
+		928857A8244C0DA800D267CC /* AppDataLoader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928857A7244C0DA800D267CC /* AppDataLoader.storyboard */; };
+		928857AA244C0E2700D267CC /* AppDataLoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928857A9244C0E2700D267CC /* AppDataLoaderVC.swift */; };
+		928857AC244C110B00D267CC /* AppDataLoaderCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928857AB244C110B00D267CC /* AppDataLoaderCoordinator.swift */; };
+		928A0514240627AC00B42077 /* VacationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A0513240627AC00B42077 /* VacationsModel.swift */; };
+		928A051624062B9B00B42077 /* VacationsTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A051524062B9B00B42077 /* VacationsTableDataSource.swift */; };
+		928A051824062C8400B42077 /* VacationsTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A051724062C8400B42077 /* VacationsTableDelegate.swift */; };
+		928A051F2406404800B42077 /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A051E2406404800B42077 /* ContactUsVC.swift */; };
+		928A05212406408300B42077 /* ContactUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A05202406408300B42077 /* ContactUsModel.swift */; };
+		928A05232406488000B42077 /* ContactUsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A05222406488000B42077 /* ContactUsCoordinator.swift */; };
+		928A0525240648C400B42077 /* ContactUs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928A0524240648C400B42077 /* ContactUs.storyboard */; };
+		928A0552240963A900B42077 /* AllContentCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A0551240963A900B42077 /* AllContentCoordinator.swift */; };
+		928A05542409645800B42077 /* AllContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A05532409645800B42077 /* AllContentVC.swift */; };
+		928A05562409653500B42077 /* AllContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A05552409653500B42077 /* AllContentModel.swift */; };
+		928A05582409663600B42077 /* AllContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 928A05572409663600B42077 /* AllContent.storyboard */; };
+		92B2044B2409B9E400ED19E0 /* PrayerTimesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2044A2409B9E400ED19E0 /* PrayerTimesVC.swift */; };
+		92B2044D2409BA8600ED19E0 /* PrayerTimesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2044C2409BA8600ED19E0 /* PrayerTimesModel.swift */; };
+		92B2044F2409BB1100ED19E0 /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2044E2409BB1100ED19E0 /* PrayerTimes.swift */; };
+		92B204512409C12500ED19E0 /* PrayerTimes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B204502409C12500ED19E0 /* PrayerTimes.storyboard */; };
+		92B2045B2409D25100ED19E0 /* BorgAndTalaAndSuhailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2045A2409D25100ED19E0 /* BorgAndTalaAndSuhailVC.swift */; };
+		92B2045D2409D27900ED19E0 /* BorgAndTalaAndSuhailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2045C2409D27900ED19E0 /* BorgAndTalaAndSuhailCoordinator.swift */; };
+		92B2045F2409D30000ED19E0 /* PrayerTimesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2045E2409D30000ED19E0 /* PrayerTimesCoordinator.swift */; };
+		92B204622409E39700ED19E0 /* BorgAndTalaAndSuhailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B204612409E39700ED19E0 /* BorgAndTalaAndSuhailRepository.swift */; };
+		92B204652409E3B800ED19E0 /* QCHBorgAndTalaAndSuhailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B204642409E3B800ED19E0 /* QCHBorgAndTalaAndSuhailRepository.swift */; };
+		92B204672409E87C00ED19E0 /* BorgAndTalaAndSuhailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B204662409E87C00ED19E0 /* BorgAndTalaAndSuhailModel.swift */; };
+		92B204692409E90000ED19E0 /* BorgAndTalaAndSuhail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B204682409E90000ED19E0 /* BorgAndTalaAndSuhail.storyboard */; };
+		92B2046B240B157300ED19E0 /* BorgAndTalaTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2046A240B157300ED19E0 /* BorgAndTalaTableDataSource.swift */; };
+		92B2046D240B15DE00ED19E0 /* Astrological.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2046C240B15DE00ED19E0 /* Astrological.swift */; };
+		92B20471240B17E500ED19E0 /* AstrologicalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2046F240B17E500ED19E0 /* AstrologicalCell.swift */; };
+		92B20472240B17E500ED19E0 /* AstrologicalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B20470240B17E500ED19E0 /* AstrologicalCell.xib */; };
+		92B20474240B1FA700ED19E0 /* BorgAndTalaTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B20473240B1FA700ED19E0 /* BorgAndTalaTableDelegate.swift */; };
+		92B20479240D6AFB00ED19E0 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B20478240D6AFB00ED19E0 /* ArrayExtension.swift */; };
+		92B20480240D74C500ED19E0 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2047F240D74C500ED19E0 /* AboutVC.swift */; };
+		92B20482240D74E900ED19E0 /* AboutCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B20481240D74E900ED19E0 /* AboutCoordinator.swift */; };
+		92B20484240D750700ED19E0 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B20483240D750700ED19E0 /* About.storyboard */; };
+		92B2048A240D8B2000ED19E0 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B20488240D8B2000ED19E0 /* ImageCell.swift */; };
+		92B2048B240D8B2000ED19E0 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B20489240D8B2000ED19E0 /* ImageCell.xib */; };
+		92B2048E240D91DF00ED19E0 /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2048C240D91DF00ED19E0 /* TextCell.swift */; };
+		92B2048F240D91DF00ED19E0 /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B2048D240D91DF00ED19E0 /* TextCell.xib */; };
+		92B20492240D92D800ED19E0 /* FileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B20490240D92D800ED19E0 /* FileCell.swift */; };
+		92B20493240D92D800ED19E0 /* FileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B20491240D92D800ED19E0 /* FileCell.xib */; };
+		92B20495240D9A1900ED19E0 /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B20494240D9A1900ED19E0 /* AboutModel.swift */; };
+		92B20497240D9BE200ED19E0 /* ContentTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B20496240D9BE200ED19E0 /* ContentTableDataSource.swift */; };
+		92B20499240D9E2000ED19E0 /* ContentTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B20498240D9E2000ED19E0 /* ContentTableDelegate.swift */; };
+		92B6DB1724610A0F00722027 /* MoonTimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B6DB1524610A0F00722027 /* MoonTimeCell.swift */; };
+		92B6DB1824610A0F00722027 /* MoonTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B6DB1624610A0F00722027 /* MoonTimeCell.xib */; };
+		92B6DB1F2461BC1B00722027 /* TextDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B6DB1E2461BC1B00722027 /* TextDetailsVC.swift */; };
+		92B6DB21246210AA00722027 /* TextDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B6DB20246210AA00722027 /* TextDetails.storyboard */; };
+		92B6DB232462119700722027 /* TextDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B6DB222462119700722027 /* TextDetailsCoordinator.swift */; };
+		92BB0BD22477B577008F36A6 /* CalendarDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BB0BD02477B577008F36A6 /* CalendarDateCell.swift */; };
+		92C3D185242C2F6500365358 /* AstrologicalDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C3D184242C2F6500365358 /* AstrologicalDetailsModel.swift */; };
+		92C3D187242C368A00365358 /* AstrologicalDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C3D186242C368A00365358 /* AstrologicalDetailsCoordinator.swift */; };
+		92C3D189242C392400365358 /* AstrologicalDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C3D188242C392400365358 /* AstrologicalDetails.storyboard */; };
+		92E35033240E856300424E71 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E35032240E856300424E71 /* CalendarVC.swift */; };
+		92E35035240E857F00424E71 /* CalendarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E35034240E857F00424E71 /* CalendarCoordinator.swift */; };
+		92E35037240E904000424E71 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E35036240E904000424E71 /* Calendar.storyboard */; };
+		92E35039240EC79E00424E71 /* CalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E35038240EC79E00424E71 /* CalendarModel.swift */; };
+		92E3503D240ED3F100424E71 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3503B240ED3F100424E71 /* EventCell.swift */; };
+		92E3503E240ED3F100424E71 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92E3503C240ED3F100424E71 /* EventCell.xib */; };
+		92E35040240ED68B00424E71 /* EventsTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3503F240ED68B00424E71 /* EventsTableDataSource.swift */; };
+		92E35042240ED77E00424E71 /* EventsTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E35041240ED77E00424E71 /* EventsTableDelegate.swift */; };
+		92E35049240EF06B00424E71 /* RamadanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E35048240EF06B00424E71 /* RamadanVC.swift */; };
+		92E3504B240EF08400424E71 /* RamadanCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3504A240EF08400424E71 /* RamadanCoordinator.swift */; };
+		92E3504D240EF0E700424E71 /* RamadanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3504C240EF0E700424E71 /* RamadanModel.swift */; };
+		92E3504F240EF5A400424E71 /* Ramadan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92E3504E240EF5A400424E71 /* Ramadan.storyboard */; };
+		92E35051240FF01900424E71 /* Asseted.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E35050240FF01900424E71 /* Asseted.swift */; };
+		92E3505324100A0E00424E71 /* MoyaCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3505224100A0E00424E71 /* MoyaCacheable.swift */; };
+		92E3505624100A4500424E71 /* MoyaCacheablePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3505524100A4500424E71 /* MoyaCacheablePlugin.swift */; };
+		92E3505924105EAF00424E71 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3505824105EAF00424E71 /* NotificationManager.swift */; };
+		92E3505B2410634E00424E71 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3505A2410634E00424E71 /* UserDefaultsExtension.swift */; };
+		92E3506224106BA800424E71 /* NotificationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3506124106BA800424E71 /* NotificationsVC.swift */; };
+		92FBBB4C24326329004EB5B5 /* PrayerTimeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBBB4B24326329004EB5B5 /* PrayerTimeNotification.swift */; };
+		92FBBB59243533B0004EB5B5 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FBBB58243533B0004EB5B5 /* NotificationService.swift */; };
+		92FBBB5D243533B0004EB5B5 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 92FBBB56243533B0004EB5B5 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9AB4F55A2EA6E9EC5AEEC20D /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D08FDBFAE27E25D74E63D7 /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		A90F2AAA262640D000CF1559 /* PrayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F2AA9262640D000CF1559 /* PrayersView.swift */; };
+		A90F2AB126264E2B00CF1559 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF724437D020063773F /* Cairo-Bold.ttf */; };
+		A90F2AB526264E2F00CF1559 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF524437D020063773F /* Cairo-Regular.ttf */; };
+		A90F2AB926264E3200CF1559 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF424437D020063773F /* Cairo-SemiBold.ttf */; };
+		A90F2B232629CB6600CF1559 /* DayCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272838B23F57E8300436F42 /* DayCalender.swift */; };
+		A90F2B282629CCF200CF1559 /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F2B272629CCF200CF1559 /* WidgetContent.swift */; };
+		A90F2B292629CCF200CF1559 /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F2B272629CCF200CF1559 /* WidgetContent.swift */; };
+		A90F2B372629D81000CF1559 /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F2B272629CCF200CF1559 /* WidgetContent.swift */; };
+		A90F2B422629D83500CF1559 /* WidgetContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90F2B272629CCF200CF1559 /* WidgetContent.swift */; };
+		A90F2B4A2629EF0000CF1559 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A323EDC21900436F42 /* StringExtension.swift */; };
+		A925401C2594058B0059610F /* AlarmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A925401B2594058B0059610F /* AlarmsVC.swift */; };
+		A925402525940A750059610F /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A925402425940A750059610F /* Alarm.swift */; };
+		A925402625940A750059610F /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A925402425940A750059610F /* Alarm.swift */; };
+		A925402A259411910059610F /* AlarmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9254029259411910059610F /* AlarmCell.swift */; };
+		A93536C725096B2A009C04B5 /* iqama.caf in Resources */ = {isa = PBXBuildFile; fileRef = A93536C525096B2A009C04B5 /* iqama.caf */; };
+		A93536C825096B2A009C04B5 /* iqama.caf in Resources */ = {isa = PBXBuildFile; fileRef = A93536C525096B2A009C04B5 /* iqama.caf */; };
+		A94E906A262A55AA006B083F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94E9059262A4508006B083F /* Assets.xcassets */; };
+		A94E906F262A56FC006B083F /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = A94E906E262A56FC006B083F /* background.png */; };
+		A96BFA6F25F7692100EBAE59 /* beeb.caf in Resources */ = {isa = PBXBuildFile; fileRef = A96BFA6D25F7692100EBAE59 /* beeb.caf */; };
+		A96BFA7025F7692100EBAE59 /* azan.caf in Resources */ = {isa = PBXBuildFile; fileRef = A96BFA6E25F7692100EBAE59 /* azan.caf */; };
+		A96C6A0A258E89F50030D12A /* SRCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C6A09258E89F40030D12A /* SRCountdownTimer.swift */; };
+		A96C6A10258EAF250030D12A /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272834A23EDD09000436F42 /* HomeModel.swift */; };
+		A96C6A2A258EAFFE0030D12A /* DayCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272838B23F57E8300436F42 /* DayCalender.swift */; };
+		A96C6A2D258EB00E0030D12A /* DailyCalendarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272839723F595E000436F42 /* DailyCalendarRepository.swift */; };
+		A96C6A30258EB01D0030D12A /* NotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9263074324106DFF00B176EA /* NotificationsModel.swift */; };
+		A96C6A33258EB0240030D12A /* QCHRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272839F23F948C000436F42 /* QCHRemoteAPI.swift */; };
+		A96C6A36258EB0400030D12A /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283AD23F9950700436F42 /* RemoteAPI.swift */; };
+		A96C6A50258EB0810030D12A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283AB23F98B7C00436F42 /* Response.swift */; };
+		A96C6A53258EB0960030D12A /* Vacation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272838D23F580FA00436F42 /* Vacation.swift */; };
+		A96C6A56258EB09D0030D12A /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272839123F5820D00436F42 /* Setting.swift */; };
+		A96C6A59258EB0A30030D12A /* ContentItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272839323F5828700436F42 /* ContentItem.swift */; };
+		A96C6A5C258EB0AA0030D12A /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272838F23F581AF00436F42 /* Capital.swift */; };
+		A96C6A5F258EB0B20030D12A /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283CA23FCFFF000436F42 /* Version.swift */; };
+		A96C6A62258EB0B80030D12A /* Tala.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92354406240590DE001007A1 /* Tala.swift */; };
+		A96C6A65258EB0BE0030D12A /* Borg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9235440424058BC9001007A1 /* Borg.swift */; };
+		A96C6A68258EB0C50030D12A /* Astronomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926D6DF8240DEC03008D5E37 /* Astronomy.swift */; };
+		A96C6A6B258EB0CF0030D12A /* TableVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9288579E244BAE2500D267CC /* TableVersion.swift */; };
+		A96C6A6E258EB0E50030D12A /* QCHRemoteAPIImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283A223F9496D00436F42 /* QCHRemoteAPIImpl.swift */; };
+		A96C6A71258EB0ED0030D12A /* QCHDailyCalendarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9272839A23F596A000436F42 /* QCHDailyCalendarRepository.swift */; };
+		A96C6A8B258EB11D0030D12A /* ContentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924EACEE2442E0510063773F /* ContentStorage.swift */; };
+		A96C6A8E258EB1410030D12A /* Astrological.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B2046C240B15DE00ED19E0 /* Astrological.swift */; };
+		A96C6A91258EB14A0030D12A /* QCH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927283A923F9823200436F42 /* QCH.swift */; };
+		A96C6A94258EB15F0030D12A /* VariacType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928857A0244BE07A00D267CC /* VariacType.swift */; };
+		A96C6A97258EB1700030D12A /* QCHContentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924EACF02442E10F0063773F /* QCHContentStorage.swift */; };
+		A96C6A9A258EB17D0030D12A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3505824105EAF00424E71 /* NotificationManager.swift */; };
+		A96C6A9D258EB18D0030D12A /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3505A2410634E00424E71 /* UserDefaultsExtension.swift */; };
+		A96C6AA0258EB1A90030D12A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A323EDC21900436F42 /* StringExtension.swift */; };
+		A96C6AA3258EB1C90030D12A /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A823EDC21900436F42 /* DateExtension.swift */; };
+		A96C6AA6258EB1FC0030D12A /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927282A423EDC21900436F42 /* DictionaryExtension.swift */; };
+		A96C6AA9258EB20D0030D12A /* MoyaCacheable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3505224100A0E00424E71 /* MoyaCacheable.swift */; };
+		A96C6AAC258EB21A0030D12A /* MoyaCacheablePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E3505524100A4500424E71 /* MoyaCacheablePlugin.swift */; };
+		A96C6AB0258EB2750030D12A /* StringExtension2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C6AAF258EB2750030D12A /* StringExtension2.swift */; };
+		A9C49098261DBB160037351E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C49097261DBB160037351E /* WidgetKit.framework */; };
+		A9C4909A261DBB160037351E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C49099261DBB160037351E /* SwiftUI.framework */; };
+		A9C4909D261DBB160037351E /* Prayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4909C261DBB160037351E /* Prayers.swift */; };
+		A9C4909F261DBB1A0037351E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C4909E261DBB1A0037351E /* Assets.xcassets */; };
+		A9C490A3261DBB1A0037351E /* PrayersExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9C49096261DBB160037351E /* PrayersExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A9E9AFC625BD067000D4E516 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF724437D020063773F /* Cairo-Bold.ttf */; };
+		A9E9AFCB25BD067A00D4E516 /* Cairo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF424437D020063773F /* Cairo-SemiBold.ttf */; };
+		A9E9AFCE25BD069A00D4E516 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 924EACF524437D020063773F /* Cairo-Regular.ttf */; };
+		A9EB1E02258E33E000D97592 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EB1E01258E33E000D97592 /* NotificationCenter.framework */; };
+		A9EB1E05258E33E000D97592 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB1E04258E33E000D97592 /* TodayViewController.swift */; };
+		A9EB1E08258E33E000D97592 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9EB1E06258E33E000D97592 /* MainInterface.storyboard */; };
+		A9EB1E0C258E33E000D97592 /* PrayersWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A9EB1E00258E33E000D97592 /* PrayersWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BBDFDF9D27203CC9E65B4AFE /* Pods_PrayersWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652E98AEE009DD80E010007E /* Pods_PrayersWidget.framework */; };
+		BC8F0165E1974AA34456ABC1 /* Pods_QatarCalendarHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0E0C08CDD06C2ECCB661A6 /* Pods_QatarCalendarHouse.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92FBBB5B243533B0004EB5B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9272824623EDB27A00436F42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92FBBB55243533B0004EB5B5;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+		A9C490A1261DBB1A0037351E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9272824623EDB27A00436F42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9C49095261DBB160037351E;
+			remoteInfo = PrayersExtension;
+		};
+		A9EB1E0A258E33E000D97592 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9272824623EDB27A00436F42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9EB1DFF258E33E000D97592;
+			remoteInfo = PrayersWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92FBBB61243533B0004EB5B5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A9C490A3261DBB1A0037351E /* PrayersExtension.appex in Embed App Extensions */,
+				92FBBB5D243533B0004EB5B5 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+				A9EB1E0C258E33E000D97592 /* PrayersWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FBBB6524360EEF004EB5B5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0CE5C85370C59CA20845536C /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		1B0AD8DA2153C1C9475D1504 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		1E0E0C08CDD06C2ECCB661A6 /* Pods_QatarCalendarHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QatarCalendarHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC1472D8F12CDABBCBF1C1B /* Pods-QatarCalendarHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QatarCalendarHouse.release.xcconfig"; path = "Target Support Files/Pods-QatarCalendarHouse/Pods-QatarCalendarHouse.release.xcconfig"; sourceTree = "<group>"; };
+		31EC10BA2669BDD92866A35E /* Pods-PrayersExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrayersExtension.release.xcconfig"; path = "Target Support Files/Pods-PrayersExtension/Pods-PrayersExtension.release.xcconfig"; sourceTree = "<group>"; };
+		3B93203529990FE54D0CBD94 /* Pods-PrayersWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrayersWidget.debug.xcconfig"; path = "Target Support Files/Pods-PrayersWidget/Pods-PrayersWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		652E98AEE009DD80E010007E /* Pods_PrayersWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrayersWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C58669F06E692C5C29FB273 /* Pods_PrayersExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrayersExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD5B26789C77C2DEC159748 /* Pods-QatarCalendarHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QatarCalendarHouse.debug.xcconfig"; path = "Target Support Files/Pods-QatarCalendarHouse/Pods-QatarCalendarHouse.debug.xcconfig"; sourceTree = "<group>"; };
+		920D61AC241F95000043EC09 /* MonthlyCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCalendarVC.swift; sourceTree = "<group>"; };
+		920D61AE241F95440043EC09 /* MonthlyCalendarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCalendarCoordinator.swift; sourceTree = "<group>"; };
+		920D61B0241F95AA0043EC09 /* MonthlyCalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCalendarModel.swift; sourceTree = "<group>"; };
+		920D61B2241F9A1D0043EC09 /* MonthlyCalendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MonthlyCalendar.storyboard; sourceTree = "<group>"; };
+		921623E7242ADE1D00D20B4C /* RamadanTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamadanTableDataSource.swift; sourceTree = "<group>"; };
+		921623E9242ADE7600D20B4C /* RamadanTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamadanTableDelegate.swift; sourceTree = "<group>"; };
+		921623EC242AE1EB00D20B4C /* RamadanPrayersTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamadanPrayersTimeCell.swift; sourceTree = "<group>"; };
+		921623ED242AE1EB00D20B4C /* RamadanPrayersTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RamadanPrayersTimeCell.xib; sourceTree = "<group>"; };
+		9221DD4E23FF0EEF00C0591C /* MasjidImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasjidImageCell.swift; sourceTree = "<group>"; };
+		9221DD4F23FF0EEF00C0591C /* MasjidImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MasjidImageCell.xib; sourceTree = "<group>"; };
+		9221DD5323FF123200C0591C /* PrayerTimesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesCell.swift; sourceTree = "<group>"; };
+		9221DD5423FF123200C0591C /* PrayerTimesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrayerTimesCell.xib; sourceTree = "<group>"; };
+		9221DD5824000A3300C0591C /* SeasonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonCell.swift; sourceTree = "<group>"; };
+		9221DD5924000A3300C0591C /* SeasonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonCell.xib; sourceTree = "<group>"; };
+		9221DD5D24000A9B00C0591C /* DayContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayContentCell.swift; sourceTree = "<group>"; };
+		9221DD5E24000A9B00C0591C /* DayContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayContentCell.xib; sourceTree = "<group>"; };
+		9221DD6224000BA300C0591C /* DayPhenomenaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPhenomenaCell.swift; sourceTree = "<group>"; };
+		9221DD6324000BA300C0591C /* DayPhenomenaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayPhenomenaCell.xib; sourceTree = "<group>"; };
+		922AF363242AF17E00EC2352 /* AstrologicalDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologicalDetailsVC.swift; sourceTree = "<group>"; };
+		9235440424058BC9001007A1 /* Borg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Borg.swift; sourceTree = "<group>"; };
+		92354406240590DE001007A1 /* Tala.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tala.swift; sourceTree = "<group>"; };
+		9235440E2405FF4F001007A1 /* VacationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationsCoordinator.swift; sourceTree = "<group>"; };
+		923544102405FF84001007A1 /* VacationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationsVC.swift; sourceTree = "<group>"; };
+		9235441224060B8A001007A1 /* QiblaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaCoordinator.swift; sourceTree = "<group>"; };
+		9235441424061207001007A1 /* Vacations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vacations.storyboard; sourceTree = "<group>"; };
+		923544172406205B001007A1 /* VacationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationCell.swift; sourceTree = "<group>"; };
+		923544182406205B001007A1 /* VacationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VacationCell.xib; sourceTree = "<group>"; };
+		924EACEB2442952B0063773F /* CATransitionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATransitionExtension.swift; sourceTree = "<group>"; };
+		924EACEE2442E0510063773F /* ContentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStorage.swift; sourceTree = "<group>"; };
+		924EACF02442E10F0063773F /* QCHContentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCHContentStorage.swift; sourceTree = "<group>"; };
+		924EACF224437D020063773F /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
+		924EACF324437D020063773F /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
+		924EACF424437D020063773F /* Cairo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-SemiBold.ttf"; sourceTree = "<group>"; };
+		924EACF524437D020063773F /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		924EACF624437D020063773F /* Cairo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		924EACF724437D020063773F /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		9263074324106DFF00B176EA /* NotificationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsModel.swift; sourceTree = "<group>"; };
+		9263074524107E7400B176EA /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
+		9263074724107E8800B176EA /* NotificationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCoordinator.swift; sourceTree = "<group>"; };
+		9263074A241092F100B176EA /* Adhan-Makkah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Adhan-Makkah.mp3"; sourceTree = "<group>"; };
+		926571962422EA93009C8086 /* MonthlyCalendarTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCalendarTableDataSource.swift; sourceTree = "<group>"; };
+		926571992422EBEA009C8086 /* MonthlyCalendarPrayerTimesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCalendarPrayerTimesCell.swift; sourceTree = "<group>"; };
+		9265719A2422EBEA009C8086 /* MonthlyCalendarPrayerTimesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthlyCalendarPrayerTimesCell.xib; sourceTree = "<group>"; };
+		9265719E2422EC3B009C8086 /* MonthlyCalendarPhenomenaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCalendarPhenomenaCell.swift; sourceTree = "<group>"; };
+		9265719F2422EC3B009C8086 /* MonthlyCalendarPhenomenaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MonthlyCalendarPhenomenaCell.xib; sourceTree = "<group>"; };
+		926571A22422ECEC009C8086 /* MonthlyCalendarTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyCalendarTableDelegate.swift; sourceTree = "<group>"; };
+		926D6DF8240DEC03008D5E37 /* Astronomy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronomy.swift; sourceTree = "<group>"; };
+		926D6DFC240DEDFA008D5E37 /* AstronomiesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomiesRepository.swift; sourceTree = "<group>"; };
+		926D6DFE240DEE49008D5E37 /* QCHAstronomiesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCHAstronomiesRepository.swift; sourceTree = "<group>"; };
+		926D6E00240DF3F4008D5E37 /* AstronomiesTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomiesTableDataSource.swift; sourceTree = "<group>"; };
+		926D6E02240DF463008D5E37 /* AstronomyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyCell.swift; sourceTree = "<group>"; };
+		926D6E03240DF463008D5E37 /* AstronomyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AstronomyCell.xib; sourceTree = "<group>"; };
+		9272824E23EDB27A00436F42 /* التقويم القطري.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "التقويم القطري.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9272825123EDB27A00436F42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9272825A23EDB27C00436F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9272825D23EDB27C00436F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9272825F23EDB27C00436F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9272826623EDC1D600436F42 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		9272826A23EDC21900436F42 /* QCHRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QCHRouter.swift; sourceTree = "<group>"; };
+		9272826B23EDC21900436F42 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		9272826C23EDC21900436F42 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		9272826D23EDC21900436F42 /* Showable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Showable.swift; sourceTree = "<group>"; };
+		9272826E23EDC21900436F42 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9272827023EDC21900436F42 /* ADVSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADVSegmentedControl.swift; sourceTree = "<group>"; };
+		9272827723EDC21900436F42 /* ExtendedNavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtendedNavBarView.swift; sourceTree = "<group>"; };
+		9272828C23EDC21900436F42 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9272829823EDC21900436F42 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		9272829923EDC21900436F42 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		9272829A23EDC21900436F42 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		9272829B23EDC21900436F42 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		9272829C23EDC21900436F42 /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		9272829D23EDC21900436F42 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		9272829E23EDC21900436F42 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		9272829F23EDC21900436F42 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		927282A023EDC21900436F42 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		927282A123EDC21900436F42 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		927282A223EDC21900436F42 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
+		927282A323EDC21900436F42 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		927282A423EDC21900436F42 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		927282A523EDC21900436F42 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		927282A623EDC21900436F42 /* UITabelViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabelViewCellExtension.swift; sourceTree = "<group>"; };
+		927282A723EDC21900436F42 /* DoubleExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		927282A823EDC21900436F42 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		927282A923EDC21900436F42 /* UINavigationItemExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationItemExtention.swift; sourceTree = "<group>"; };
+		927282B423EDC21900436F42 /* SideMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuItem.swift; sourceTree = "<group>"; };
+		927282B923EDC21900436F42 /* Sociable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sociable.swift; sourceTree = "<group>"; };
+		927282BA23EDC21900436F42 /* Loadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		927282BB23EDC21900436F42 /* Sharable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sharable.swift; sourceTree = "<group>"; };
+		9272832423EDCA8700436F42 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		9272832C23EDCFDA00436F42 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		9272833223EDD09000436F42 /* SideMenuCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCoordinator.swift; sourceTree = "<group>"; };
+		9272833423EDD09000436F42 /* SideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		9272833623EDD09000436F42 /* SideMenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		9272833B23EDD09000436F42 /* SideMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
+		9272833D23EDD09000436F42 /* SideMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		9272833E23EDD09000436F42 /* SideMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		9272834123EDD09000436F42 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		9272834323EDD09000436F42 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		9272834623EDD09000436F42 /* HomeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		9272834823EDD09000436F42 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		9272834A23EDD09000436F42 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		9272834F23EDD09000436F42 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		9272837123EEF69300436F42 /* QiblaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiblaVC.swift; sourceTree = "<group>"; };
+		9272837323F1A01100436F42 /* Qibla.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Qibla.storyboard; sourceTree = "<group>"; };
+		9272837623F1DAB100436F42 /* Mohammad Bold normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mohammad Bold normal.ttf"; sourceTree = "<group>"; };
+		9272837923F1DE7F00436F42 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		9272837A23F1DE7F00436F42 /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
+		9272838323F1F51400436F42 /* HomeTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableDataSource.swift; sourceTree = "<group>"; };
+		9272838523F1F89800436F42 /* HomeTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableDelegate.swift; sourceTree = "<group>"; };
+		9272838B23F57E8300436F42 /* DayCalender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalender.swift; sourceTree = "<group>"; };
+		9272838D23F580FA00436F42 /* Vacation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vacation.swift; sourceTree = "<group>"; };
+		9272838F23F581AF00436F42 /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
+		9272839123F5820D00436F42 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		9272839323F5828700436F42 /* ContentItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItem.swift; sourceTree = "<group>"; };
+		9272839723F595E000436F42 /* DailyCalendarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCalendarRepository.swift; sourceTree = "<group>"; };
+		9272839A23F596A000436F42 /* QCHDailyCalendarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCHDailyCalendarRepository.swift; sourceTree = "<group>"; };
+		9272839F23F948C000436F42 /* QCHRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCHRemoteAPI.swift; sourceTree = "<group>"; };
+		927283A223F9496D00436F42 /* QCHRemoteAPIImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCHRemoteAPIImpl.swift; sourceTree = "<group>"; };
+		927283A923F9823200436F42 /* QCH.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCH.swift; sourceTree = "<group>"; };
+		927283AB23F98B7C00436F42 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		927283AD23F9950700436F42 /* RemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
+		927283B323F9BCC500436F42 /* AllContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllContentRepository.swift; sourceTree = "<group>"; };
+		927283B623F9BD4200436F42 /* QCHAllContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCHAllContentRepository.swift; sourceTree = "<group>"; };
+		927283B923F9BE0900436F42 /* SettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRepository.swift; sourceTree = "<group>"; };
+		927283BB23F9BE5900436F42 /* QCHSettingsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCHSettingsRepository.swift; sourceTree = "<group>"; };
+		927283BD23F9BEEB00436F42 /* VecationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VecationRepository.swift; sourceTree = "<group>"; };
+		927283C023F9BF4800436F42 /* QCHVacationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCHVacationRepository.swift; sourceTree = "<group>"; };
+		927283C223F9CF1F00436F42 /* PrayTimesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayTimesRepository.swift; sourceTree = "<group>"; };
+		927283C523F9CFFF00436F42 /* QCHPrayTimesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCHPrayTimesRepository.swift; sourceTree = "<group>"; };
+		927283CA23FCFFF000436F42 /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		927283D323FEFF7E00436F42 /* BorgAndTalaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorgAndTalaCell.swift; sourceTree = "<group>"; };
+		927283D423FEFF7E00436F42 /* BorgAndTalaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BorgAndTalaCell.xib; sourceTree = "<group>"; };
+		9288579C244BA73500D267CC /* ApplicationContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationContentModel.swift; sourceTree = "<group>"; };
+		9288579E244BAE2500D267CC /* TableVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVersion.swift; sourceTree = "<group>"; };
+		928857A0244BE07A00D267CC /* VariacType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariacType.swift; sourceTree = "<group>"; };
+		928857A7244C0DA800D267CC /* AppDataLoader.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppDataLoader.storyboard; sourceTree = "<group>"; };
+		928857A9244C0E2700D267CC /* AppDataLoaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataLoaderVC.swift; sourceTree = "<group>"; };
+		928857AB244C110B00D267CC /* AppDataLoaderCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataLoaderCoordinator.swift; sourceTree = "<group>"; };
+		928A0513240627AC00B42077 /* VacationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationsModel.swift; sourceTree = "<group>"; };
+		928A051524062B9B00B42077 /* VacationsTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationsTableDataSource.swift; sourceTree = "<group>"; };
+		928A051724062C8400B42077 /* VacationsTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VacationsTableDelegate.swift; sourceTree = "<group>"; };
+		928A051E2406404800B42077 /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		928A05202406408300B42077 /* ContactUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsModel.swift; sourceTree = "<group>"; };
+		928A05222406488000B42077 /* ContactUsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsCoordinator.swift; sourceTree = "<group>"; };
+		928A0524240648C400B42077 /* ContactUs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactUs.storyboard; sourceTree = "<group>"; };
+		928A0551240963A900B42077 /* AllContentCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllContentCoordinator.swift; sourceTree = "<group>"; };
+		928A05532409645800B42077 /* AllContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllContentVC.swift; sourceTree = "<group>"; };
+		928A05552409653500B42077 /* AllContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllContentModel.swift; sourceTree = "<group>"; };
+		928A05572409663600B42077 /* AllContent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AllContent.storyboard; sourceTree = "<group>"; };
+		92B2044A2409B9E400ED19E0 /* PrayerTimesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesVC.swift; sourceTree = "<group>"; };
+		92B2044C2409BA8600ED19E0 /* PrayerTimesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesModel.swift; sourceTree = "<group>"; };
+		92B2044E2409BB1100ED19E0 /* PrayerTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
+		92B204502409C12500ED19E0 /* PrayerTimes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PrayerTimes.storyboard; sourceTree = "<group>"; };
+		92B2045A2409D25100ED19E0 /* BorgAndTalaAndSuhailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorgAndTalaAndSuhailVC.swift; sourceTree = "<group>"; };
+		92B2045C2409D27900ED19E0 /* BorgAndTalaAndSuhailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorgAndTalaAndSuhailCoordinator.swift; sourceTree = "<group>"; };
+		92B2045E2409D30000ED19E0 /* PrayerTimesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesCoordinator.swift; sourceTree = "<group>"; };
+		92B204612409E39700ED19E0 /* BorgAndTalaAndSuhailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorgAndTalaAndSuhailRepository.swift; sourceTree = "<group>"; };
+		92B204642409E3B800ED19E0 /* QCHBorgAndTalaAndSuhailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QCHBorgAndTalaAndSuhailRepository.swift; sourceTree = "<group>"; };
+		92B204662409E87C00ED19E0 /* BorgAndTalaAndSuhailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorgAndTalaAndSuhailModel.swift; sourceTree = "<group>"; };
+		92B204682409E90000ED19E0 /* BorgAndTalaAndSuhail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BorgAndTalaAndSuhail.storyboard; sourceTree = "<group>"; };
+		92B2046A240B157300ED19E0 /* BorgAndTalaTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorgAndTalaTableDataSource.swift; sourceTree = "<group>"; };
+		92B2046C240B15DE00ED19E0 /* Astrological.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astrological.swift; sourceTree = "<group>"; };
+		92B2046F240B17E500ED19E0 /* AstrologicalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologicalCell.swift; sourceTree = "<group>"; };
+		92B20470240B17E500ED19E0 /* AstrologicalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AstrologicalCell.xib; sourceTree = "<group>"; };
+		92B20473240B1FA700ED19E0 /* BorgAndTalaTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorgAndTalaTableDelegate.swift; sourceTree = "<group>"; };
+		92B20478240D6AFB00ED19E0 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		92B2047F240D74C500ED19E0 /* AboutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		92B20481240D74E900ED19E0 /* AboutCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCoordinator.swift; sourceTree = "<group>"; };
+		92B20483240D750700ED19E0 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		92B20488240D8B2000ED19E0 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		92B20489240D8B2000ED19E0 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		92B2048C240D91DF00ED19E0 /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
+		92B2048D240D91DF00ED19E0 /* TextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		92B20490240D92D800ED19E0 /* FileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCell.swift; sourceTree = "<group>"; };
+		92B20491240D92D800ED19E0 /* FileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FileCell.xib; sourceTree = "<group>"; };
+		92B20494240D9A1900ED19E0 /* AboutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
+		92B20496240D9BE200ED19E0 /* ContentTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableDataSource.swift; sourceTree = "<group>"; };
+		92B20498240D9E2000ED19E0 /* ContentTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableDelegate.swift; sourceTree = "<group>"; };
+		92B6DB1524610A0F00722027 /* MoonTimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonTimeCell.swift; sourceTree = "<group>"; };
+		92B6DB1624610A0F00722027 /* MoonTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoonTimeCell.xib; sourceTree = "<group>"; };
+		92B6DB1E2461BC1B00722027 /* TextDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetailsVC.swift; sourceTree = "<group>"; };
+		92B6DB20246210AA00722027 /* TextDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextDetails.storyboard; sourceTree = "<group>"; };
+		92B6DB222462119700722027 /* TextDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetailsCoordinator.swift; sourceTree = "<group>"; };
+		92BB0BD02477B577008F36A6 /* CalendarDateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDateCell.swift; sourceTree = "<group>"; };
+		92C3D184242C2F6500365358 /* AstrologicalDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologicalDetailsModel.swift; sourceTree = "<group>"; };
+		92C3D186242C368A00365358 /* AstrologicalDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologicalDetailsCoordinator.swift; sourceTree = "<group>"; };
+		92C3D188242C392400365358 /* AstrologicalDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AstrologicalDetails.storyboard; sourceTree = "<group>"; };
+		92E35032240E856300424E71 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		92E35034240E857F00424E71 /* CalendarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCoordinator.swift; sourceTree = "<group>"; };
+		92E35036240E904000424E71 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		92E35038240EC79E00424E71 /* CalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarModel.swift; sourceTree = "<group>"; };
+		92E3503B240ED3F100424E71 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		92E3503C240ED3F100424E71 /* EventCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventCell.xib; sourceTree = "<group>"; };
+		92E3503F240ED68B00424E71 /* EventsTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableDataSource.swift; sourceTree = "<group>"; };
+		92E35041240ED77E00424E71 /* EventsTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableDelegate.swift; sourceTree = "<group>"; };
+		92E35048240EF06B00424E71 /* RamadanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamadanVC.swift; sourceTree = "<group>"; };
+		92E3504A240EF08400424E71 /* RamadanCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamadanCoordinator.swift; sourceTree = "<group>"; };
+		92E3504C240EF0E700424E71 /* RamadanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamadanModel.swift; sourceTree = "<group>"; };
+		92E3504E240EF5A400424E71 /* Ramadan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Ramadan.storyboard; sourceTree = "<group>"; };
+		92E35050240FF01900424E71 /* Asseted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Asseted.swift; sourceTree = "<group>"; };
+		92E3505224100A0E00424E71 /* MoyaCacheable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaCacheable.swift; sourceTree = "<group>"; };
+		92E3505524100A4500424E71 /* MoyaCacheablePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaCacheablePlugin.swift; sourceTree = "<group>"; };
+		92E3505824105EAF00424E71 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		92E3505A2410634E00424E71 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		92E3506124106BA800424E71 /* NotificationsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsVC.swift; sourceTree = "<group>"; };
+		92FBBB4B24326329004EB5B5 /* PrayerTimeNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeNotification.swift; sourceTree = "<group>"; };
+		92FBBB51243532F1004EB5B5 /* التقويم القطري.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "التقويم القطري.entitlements"; sourceTree = "<group>"; };
+		92FBBB56243533B0004EB5B5 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		92FBBB58243533B0004EB5B5 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		92FBBB5A243533B0004EB5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68F455C6A17E1349052FD66 /* Pods-PrayersExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrayersExtension.debug.xcconfig"; path = "Target Support Files/Pods-PrayersExtension/Pods-PrayersExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		A90F2AA9262640D000CF1559 /* PrayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayersView.swift; sourceTree = "<group>"; };
+		A90F2B272629CCF200CF1559 /* WidgetContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetContent.swift; sourceTree = "<group>"; };
+		A90F2B462629DD0600CF1559 /* PrayersExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrayersExtension.entitlements; sourceTree = "<group>"; };
+		A925401B2594058B0059610F /* AlarmsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsVC.swift; sourceTree = "<group>"; };
+		A925402425940A750059610F /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		A9254029259411910059610F /* AlarmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCell.swift; sourceTree = "<group>"; };
+		A93536C525096B2A009C04B5 /* iqama.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iqama.caf; sourceTree = "<group>"; };
+		A94E9059262A4508006B083F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A94E906E262A56FC006B083F /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		A96BFA6D25F7692100EBAE59 /* beeb.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beeb.caf; sourceTree = "<group>"; };
+		A96BFA6E25F7692100EBAE59 /* azan.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = azan.caf; sourceTree = "<group>"; };
+		A96C6A09258E89F40030D12A /* SRCountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SRCountdownTimer.swift; path = Pods/SRCountdownTimer/SRCountdownTimer/SRCountdownTimer.swift; sourceTree = SOURCE_ROOT; };
+		A96C6AAF258EB2750030D12A /* StringExtension2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension2.swift; sourceTree = "<group>"; };
+		A9C49096261DBB160037351E /* PrayersExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrayersExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C49097261DBB160037351E /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A9C49099261DBB160037351E /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A9C4909C261DBB160037351E /* Prayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayers.swift; sourceTree = "<group>"; };
+		A9C4909E261DBB1A0037351E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9C490A0261DBB1A0037351E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9EB1E00258E33E000D97592 /* PrayersWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrayersWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9EB1E01258E33E000D97592 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A9EB1E04258E33E000D97592 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A9EB1E07258E33E000D97592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A9EB1E09258E33E000D97592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0D08FDBFAE27E25D74E63D7 /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C91F526E9F54275F5D4C3A /* Pods-PrayersWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrayersWidget.release.xcconfig"; path = "Target Support Files/Pods-PrayersWidget/Pods-PrayersWidget.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9272824B23EDB27A00436F42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8F0165E1974AA34456ABC1 /* Pods_QatarCalendarHouse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FBBB53243533B0004EB5B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AB4F55A2EA6E9EC5AEEC20D /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C49093261DBB160037351E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C4909A261DBB160037351E /* SwiftUI.framework in Frameworks */,
+				A9C49098261DBB160037351E /* WidgetKit.framework in Frameworks */,
+				5E9A8703AE6E9CBF9D37FC0C /* Pods_PrayersExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EB1DFD258E33E000D97592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9EB1E02258E33E000D97592 /* NotificationCenter.framework in Frameworks */,
+				BBDFDF9D27203CC9E65B4AFE /* Pods_PrayersWidget.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011C056B622F7C2C6C9224D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B0AD8DA2153C1C9475D1504 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				0CE5C85370C59CA20845536C /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				8CD5B26789C77C2DEC159748 /* Pods-QatarCalendarHouse.debug.xcconfig */,
+				1FC1472D8F12CDABBCBF1C1B /* Pods-QatarCalendarHouse.release.xcconfig */,
+				3B93203529990FE54D0CBD94 /* Pods-PrayersWidget.debug.xcconfig */,
+				B4C91F526E9F54275F5D4C3A /* Pods-PrayersWidget.release.xcconfig */,
+				A68F455C6A17E1349052FD66 /* Pods-PrayersExtension.debug.xcconfig */,
+				31EC10BA2669BDD92866A35E /* Pods-PrayersExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		48179BA8E13669471E73FEDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0D08FDBFAE27E25D74E63D7 /* Pods_OneSignalNotificationServiceExtension.framework */,
+				1E0E0C08CDD06C2ECCB661A6 /* Pods_QatarCalendarHouse.framework */,
+				A9EB1E01258E33E000D97592 /* NotificationCenter.framework */,
+				652E98AEE009DD80E010007E /* Pods_PrayersWidget.framework */,
+				A9C49097261DBB160037351E /* WidgetKit.framework */,
+				A9C49099261DBB160037351E /* SwiftUI.framework */,
+				7C58669F06E692C5C29FB273 /* Pods_PrayersExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		920D61A7241F949A0043EC09 /* MonthlyCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				920D61AB241F94DB0043EC09 /* Coordinator */,
+				920D61AA241F94D50043EC09 /* Model */,
+				920D61A9241F94D00043EC09 /* View */,
+				920D61A8241F94BF0043EC09 /* Controller */,
+			);
+			path = MonthlyCalendar;
+			sourceTree = "<group>";
+		};
+		920D61A8241F94BF0043EC09 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				920D61AC241F95000043EC09 /* MonthlyCalendarVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		920D61A9241F94D00043EC09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9265719D2422EC00009C8086 /* MonthlyCalendarPhenomenaCell */,
+				926571982422EB71009C8086 /* MonthlyCalendarPrayerTimesCell */,
+				920D61B2241F9A1D0043EC09 /* MonthlyCalendar.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		920D61AA241F94D50043EC09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				920D61B0241F95AA0043EC09 /* MonthlyCalendarModel.swift */,
+				926571962422EA93009C8086 /* MonthlyCalendarTableDataSource.swift */,
+				926571A22422ECEC009C8086 /* MonthlyCalendarTableDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		920D61AB241F94DB0043EC09 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				920D61AE241F95440043EC09 /* MonthlyCalendarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		921623EB242AE1D300D20B4C /* RamadanPrayersTimeCell */ = {
+			isa = PBXGroup;
+			children = (
+				921623EC242AE1EB00D20B4C /* RamadanPrayersTimeCell.swift */,
+				921623ED242AE1EB00D20B4C /* RamadanPrayersTimeCell.xib */,
+			);
+			path = RamadanPrayersTimeCell;
+			sourceTree = "<group>";
+		};
+		9221DD4D23FF0CE600C0591C /* MasjidImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				9221DD4E23FF0EEF00C0591C /* MasjidImageCell.swift */,
+				9221DD4F23FF0EEF00C0591C /* MasjidImageCell.xib */,
+			);
+			path = MasjidImageCell;
+			sourceTree = "<group>";
+		};
+		9221DD5223FF120900C0591C /* PrayerTimesCell */ = {
+			isa = PBXGroup;
+			children = (
+				9221DD5323FF123200C0591C /* PrayerTimesCell.swift */,
+				9221DD5423FF123200C0591C /* PrayerTimesCell.xib */,
+			);
+			path = PrayerTimesCell;
+			sourceTree = "<group>";
+		};
+		9221DD572400091200C0591C /* SeasonCell */ = {
+			isa = PBXGroup;
+			children = (
+				9221DD5824000A3300C0591C /* SeasonCell.swift */,
+				9221DD5924000A3300C0591C /* SeasonCell.xib */,
+			);
+			path = SeasonCell;
+			sourceTree = "<group>";
+		};
+		9221DD5C24000A7E00C0591C /* DayContentCell */ = {
+			isa = PBXGroup;
+			children = (
+				9221DD5D24000A9B00C0591C /* DayContentCell.swift */,
+				9221DD5E24000A9B00C0591C /* DayContentCell.xib */,
+			);
+			path = DayContentCell;
+			sourceTree = "<group>";
+		};
+		9221DD6124000B8000C0591C /* DayPhenomenaCell */ = {
+			isa = PBXGroup;
+			children = (
+				9221DD6224000BA300C0591C /* DayPhenomenaCell.swift */,
+				9221DD6324000BA300C0591C /* DayPhenomenaCell.xib */,
+			);
+			path = DayPhenomenaCell;
+			sourceTree = "<group>";
+		};
+		922AF35E242AEBB200EC2352 /* AstrologicalDetails */ = {
+			isa = PBXGroup;
+			children = (
+				922AF35F242AEBF300EC2352 /* Coordinator */,
+				922AF361242AEC0000EC2352 /* Model */,
+				922AF360242AEBFB00EC2352 /* View */,
+				922AF362242AEC0800EC2352 /* Controller */,
+			);
+			path = AstrologicalDetails;
+			sourceTree = "<group>";
+		};
+		922AF35F242AEBF300EC2352 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92C3D186242C368A00365358 /* AstrologicalDetailsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		922AF360242AEBFB00EC2352 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92C3D188242C392400365358 /* AstrologicalDetails.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		922AF361242AEC0000EC2352 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92C3D184242C2F6500365358 /* AstrologicalDetailsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		922AF362242AEC0800EC2352 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				922AF363242AF17E00EC2352 /* AstrologicalDetailsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		923544082405FED5001007A1 /* Vacations */ = {
+			isa = PBXGroup;
+			children = (
+				9235440C2405FF08001007A1 /* Coordinator */,
+				9235440B2405FEEC001007A1 /* Model */,
+				9235440A2405FEE4001007A1 /* View */,
+				923544092405FEDD001007A1 /* Controller */,
+			);
+			path = Vacations;
+			sourceTree = "<group>";
+		};
+		923544092405FEDD001007A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				923544102405FF84001007A1 /* VacationsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9235440A2405FEE4001007A1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9235441624062040001007A1 /* VacationCell */,
+				9235441424061207001007A1 /* Vacations.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9235440B2405FEEC001007A1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				928A0513240627AC00B42077 /* VacationsModel.swift */,
+				928A051524062B9B00B42077 /* VacationsTableDataSource.swift */,
+				928A051724062C8400B42077 /* VacationsTableDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9235440C2405FF08001007A1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9235440E2405FF4F001007A1 /* VacationsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9235440D2405FF25001007A1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9235441224060B8A001007A1 /* QiblaCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9235441624062040001007A1 /* VacationCell */ = {
+			isa = PBXGroup;
+			children = (
+				923544172406205B001007A1 /* VacationCell.swift */,
+				923544182406205B001007A1 /* VacationCell.xib */,
+			);
+			path = VacationCell;
+			sourceTree = "<group>";
+		};
+		924EACED2442E0300063773F /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				924EACEE2442E0510063773F /* ContentStorage.swift */,
+				924EACF02442E10F0063773F /* QCHContentStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		92630749241092E500B176EA /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A96BFA6E25F7692100EBAE59 /* azan.caf */,
+				A96BFA6D25F7692100EBAE59 /* beeb.caf */,
+				A93536C525096B2A009C04B5 /* iqama.caf */,
+				9263074A241092F100B176EA /* Adhan-Makkah.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		926571982422EB71009C8086 /* MonthlyCalendarPrayerTimesCell */ = {
+			isa = PBXGroup;
+			children = (
+				926571992422EBEA009C8086 /* MonthlyCalendarPrayerTimesCell.swift */,
+				9265719A2422EBEA009C8086 /* MonthlyCalendarPrayerTimesCell.xib */,
+			);
+			path = MonthlyCalendarPrayerTimesCell;
+			sourceTree = "<group>";
+		};
+		9265719D2422EC00009C8086 /* MonthlyCalendarPhenomenaCell */ = {
+			isa = PBXGroup;
+			children = (
+				9265719E2422EC3B009C8086 /* MonthlyCalendarPhenomenaCell.swift */,
+				9265719F2422EC3B009C8086 /* MonthlyCalendarPhenomenaCell.xib */,
+			);
+			path = MonthlyCalendarPhenomenaCell;
+			sourceTree = "<group>";
+		};
+		926D6DFA240DEDD2008D5E37 /* AstronomiesRepository */ = {
+			isa = PBXGroup;
+			children = (
+				926D6DFC240DEDFA008D5E37 /* AstronomiesRepository.swift */,
+				926D6DFB240DEDEB008D5E37 /* Impelementations */,
+			);
+			path = AstronomiesRepository;
+			sourceTree = "<group>";
+		};
+		926D6DFB240DEDEB008D5E37 /* Impelementations */ = {
+			isa = PBXGroup;
+			children = (
+				926D6DFE240DEE49008D5E37 /* QCHAstronomiesRepository.swift */,
+			);
+			path = Impelementations;
+			sourceTree = "<group>";
+		};
+		926D6E06240DF468008D5E37 /* AstronomyCell */ = {
+			isa = PBXGroup;
+			children = (
+				926D6E02240DF463008D5E37 /* AstronomyCell.swift */,
+				926D6E03240DF463008D5E37 /* AstronomyCell.xib */,
+			);
+			path = AstronomyCell;
+			sourceTree = "<group>";
+		};
+		9272824523EDB27A00436F42 = {
+			isa = PBXGroup;
+			children = (
+				A90F2B462629DD0600CF1559 /* PrayersExtension.entitlements */,
+				9272825023EDB27A00436F42 /* QatarCalendarHouse */,
+				A9EB1E03258E33E000D97592 /* PrayersWidget */,
+				92FBBB57243533B0004EB5B5 /* OneSignalNotificationServiceExtension */,
+				A9C4909B261DBB160037351E /* Prayers */,
+				9272824F23EDB27A00436F42 /* Products */,
+				011C056B622F7C2C6C9224D9 /* Pods */,
+				48179BA8E13669471E73FEDC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9272824F23EDB27A00436F42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9272824E23EDB27A00436F42 /* التقويم القطري.app */,
+				92FBBB56243533B0004EB5B5 /* OneSignalNotificationServiceExtension.appex */,
+				A9EB1E00258E33E000D97592 /* PrayersWidget.appex */,
+				A9C49096261DBB160037351E /* PrayersExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9272825023EDB27A00436F42 /* QatarCalendarHouse */ = {
+			isa = PBXGroup;
+			children = (
+				92FBBB51243532F1004EB5B5 /* التقويم القطري.entitlements */,
+				9272826523EDBE1700436F42 /* Application */,
+				9272832F23EDD04600436F42 /* Modules */,
+				9272826823EDC21900436F42 /* Core */,
+			);
+			path = QatarCalendarHouse;
+			sourceTree = "<group>";
+		};
+		9272826523EDBE1700436F42 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				9272825123EDB27A00436F42 /* AppDelegate.swift */,
+				9272825C23EDB27C00436F42 /* LaunchScreen.storyboard */,
+				9272825F23EDB27C00436F42 /* Info.plist */,
+				9272825A23EDB27C00436F42 /* Assets.xcassets */,
+				9272826623EDC1D600436F42 /* ApplicationCoordinator.swift */,
+				9288579C244BA73500D267CC /* ApplicationContentModel.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		9272826823EDC21900436F42 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				924EACED2442E0300063773F /* Storage */,
+				92E3505724105E8E00424E71 /* Notification */,
+				9272839C23F597AF00436F42 /* Remote */,
+				9272839523F5831200436F42 /* Repositories */,
+				9272826923EDC21900436F42 /* Coordinator */,
+				9272826F23EDC21900436F42 /* CustomControllers */,
+				9272828B23EDC21900436F42 /* Constants */,
+				9272828D23EDC21900436F42 /* Resources */,
+				9272829723EDC21900436F42 /* Extensions */,
+				927282AA23EDC21900436F42 /* DTOs */,
+				927282B823EDC21900436F42 /* Protocols */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9272826923EDC21900436F42 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9272826A23EDC21900436F42 /* QCHRouter.swift */,
+				9272826B23EDC21900436F42 /* Storyboarded.swift */,
+				9272826C23EDC21900436F42 /* Router.swift */,
+				9272826D23EDC21900436F42 /* Showable.swift */,
+				9272826E23EDC21900436F42 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9272826F23EDC21900436F42 /* CustomControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9272827023EDC21900436F42 /* ADVSegmentedControl.swift */,
+				9272827723EDC21900436F42 /* ExtendedNavBarView.swift */,
+				9272832423EDCA8700436F42 /* ProgressHUD.swift */,
+			);
+			path = CustomControllers;
+			sourceTree = "<group>";
+		};
+		9272828323EDC21900436F42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				927283A923F9823200436F42 /* QCH.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9272828B23EDC21900436F42 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9272828C23EDC21900436F42 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9272828D23EDC21900436F42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92630749241092E500B176EA /* Sounds */,
+				9272837523F1DA9800436F42 /* Fonts */,
+				9272832C23EDCFDA00436F42 /* R.generated.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9272829723EDC21900436F42 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9272829823EDC21900436F42 /* UIButtonExtension.swift */,
+				9272829923EDC21900436F42 /* UIColorExtension.swift */,
+				9272829A23EDC21900436F42 /* UITextFieldExtension.swift */,
+				9272829B23EDC21900436F42 /* UILabelExtension.swift */,
+				9272829C23EDC21900436F42 /* IntExtension.swift */,
+				9272829D23EDC21900436F42 /* UIViewControllerExtension.swift */,
+				9272829E23EDC21900436F42 /* UITableViewExtension.swift */,
+				9272829F23EDC21900436F42 /* UIViewExtension.swift */,
+				927282A023EDC21900436F42 /* UIStackViewExtension.swift */,
+				927282A123EDC21900436F42 /* UIFontExtension.swift */,
+				927282A223EDC21900436F42 /* UINavigationControllerExtension.swift */,
+				927282A323EDC21900436F42 /* StringExtension.swift */,
+				A96C6AAF258EB2750030D12A /* StringExtension2.swift */,
+				927282A423EDC21900436F42 /* DictionaryExtension.swift */,
+				927282A523EDC21900436F42 /* UIImageExtension.swift */,
+				927282A623EDC21900436F42 /* UITabelViewCellExtension.swift */,
+				927282A723EDC21900436F42 /* DoubleExtension.swift */,
+				927282A823EDC21900436F42 /* DateExtension.swift */,
+				927282A923EDC21900436F42 /* UINavigationItemExtention.swift */,
+				92B20478240D6AFB00ED19E0 /* ArrayExtension.swift */,
+				92E3505A2410634E00424E71 /* UserDefaultsExtension.swift */,
+				924EACEB2442952B0063773F /* CATransitionExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		927282AA23EDC21900436F42 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				927282B423EDC21900436F42 /* SideMenuItem.swift */,
+				9272838B23F57E8300436F42 /* DayCalender.swift */,
+				9272838D23F580FA00436F42 /* Vacation.swift */,
+				9272838F23F581AF00436F42 /* Capital.swift */,
+				9272839123F5820D00436F42 /* Setting.swift */,
+				9272839323F5828700436F42 /* ContentItem.swift */,
+				927283CA23FCFFF000436F42 /* Version.swift */,
+				9235440424058BC9001007A1 /* Borg.swift */,
+				92354406240590DE001007A1 /* Tala.swift */,
+				926D6DF8240DEC03008D5E37 /* Astronomy.swift */,
+				92FBBB4B24326329004EB5B5 /* PrayerTimeNotification.swift */,
+				9288579E244BAE2500D267CC /* TableVersion.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		927282B823EDC21900436F42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				927282B923EDC21900436F42 /* Sociable.swift */,
+				927282BA23EDC21900436F42 /* Loadable.swift */,
+				927282BB23EDC21900436F42 /* Sharable.swift */,
+				92B2046C240B15DE00ED19E0 /* Astrological.swift */,
+				92E35050240FF01900424E71 /* Asseted.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9272832F23EDD04600436F42 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				92B6DB192461BBB600722027 /* TextDetails */,
+				928857A2244C0CF600D267CC /* AppDataLoader */,
+				922AF35E242AEBB200EC2352 /* AstrologicalDetails */,
+				920D61A7241F949A0043EC09 /* MonthlyCalendar */,
+				92E3505C24106B5700424E71 /* ManagingNotifications */,
+				92E35043240EEF3200424E71 /* Ramadan */,
+				92E3502D240E851000424E71 /* Calendar */,
+				92B2047A240D747200ED19E0 /* About */,
+				92B204552409D20D00ED19E0 /* BorgAndTalaAndSuhail */,
+				92B204452409B9B500ED19E0 /* PrayerTimes */,
+				928A054C2409626300B42077 /* AllContent */,
+				928A05192406396200B42077 /* ContactUs */,
+				923544082405FED5001007A1 /* Vacations */,
+				9272836D23EEF65800436F42 /* Qibla */,
+				9272833F23EDD09000436F42 /* Main */,
+				9272834423EDD09000436F42 /* Home */,
+				9272833023EDD09000436F42 /* SideMenue */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9272833023EDD09000436F42 /* SideMenue */ = {
+			isa = PBXGroup;
+			children = (
+				9272833123EDD09000436F42 /* Coordinator */,
+				9272833523EDD09000436F42 /* Model */,
+				9272833723EDD09000436F42 /* View */,
+				9272833323EDD09000436F42 /* Controller */,
+			);
+			path = SideMenue;
+			sourceTree = "<group>";
+		};
+		9272833123EDD09000436F42 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9272833223EDD09000436F42 /* SideMenuCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9272833323EDD09000436F42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9272833423EDD09000436F42 /* SideMenuVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9272833523EDD09000436F42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9272833623EDD09000436F42 /* SideMenuModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9272833723EDD09000436F42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9272833C23EDD09000436F42 /* SideMenuCell */,
+				9272833B23EDD09000436F42 /* SideMenu.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9272833C23EDD09000436F42 /* SideMenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				9272833D23EDD09000436F42 /* SideMenuCell.xib */,
+				9272833E23EDD09000436F42 /* SideMenuCell.swift */,
+			);
+			path = SideMenuCell;
+			sourceTree = "<group>";
+		};
+		9272833F23EDD09000436F42 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9272834023EDD09000436F42 /* Controller */,
+				9272834223EDD09000436F42 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9272834023EDD09000436F42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9272834123EDD09000436F42 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9272834223EDD09000436F42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9272834323EDD09000436F42 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9272834423EDD09000436F42 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9272834523EDD09000436F42 /* Coordinator */,
+				9272834923EDD09000436F42 /* Model */,
+				9272834B23EDD09000436F42 /* View */,
+				9272834723EDD09000436F42 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9272834523EDD09000436F42 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9272834623EDD09000436F42 /* HomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9272834723EDD09000436F42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9272834823EDD09000436F42 /* HomeVC.swift */,
+				A925401B2594058B0059610F /* AlarmsVC.swift */,
+				A925402425940A750059610F /* Alarm.swift */,
+				A9254029259411910059610F /* AlarmCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9272834923EDD09000436F42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9272834A23EDD09000436F42 /* HomeModel.swift */,
+				9272838323F1F51400436F42 /* HomeTableDataSource.swift */,
+				9272838523F1F89800436F42 /* HomeTableDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9272834B23EDD09000436F42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92B6DB14246109E700722027 /* MoonTimeCell */,
+				9221DD6124000B8000C0591C /* DayPhenomenaCell */,
+				9221DD5C24000A7E00C0591C /* DayContentCell */,
+				9221DD572400091200C0591C /* SeasonCell */,
+				9221DD5223FF120900C0591C /* PrayerTimesCell */,
+				9221DD4D23FF0CE600C0591C /* MasjidImageCell */,
+				927283D223FEFE7500436F42 /* BorgAndTalaCell */,
+				9272837823F1DE3100436F42 /* DateCell */,
+				9272834F23EDD09000436F42 /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9272836D23EEF65800436F42 /* Qibla */ = {
+			isa = PBXGroup;
+			children = (
+				9235440D2405FF25001007A1 /* Coordinator */,
+				9272837023EEF67100436F42 /* Model */,
+				9272836F23EEF66C00436F42 /* View */,
+				9272836E23EEF66200436F42 /* Controller */,
+			);
+			path = Qibla;
+			sourceTree = "<group>";
+		};
+		9272836E23EEF66200436F42 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9272837123EEF69300436F42 /* QiblaVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9272836F23EEF66C00436F42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9272837323F1A01100436F42 /* Qibla.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9272837023EEF67100436F42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9272837523F1DA9800436F42 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				924EACF324437D020063773F /* Cairo-Black.ttf */,
+				924EACF724437D020063773F /* Cairo-Bold.ttf */,
+				924EACF624437D020063773F /* Cairo-ExtraLight.ttf */,
+				924EACF224437D020063773F /* Cairo-Light.ttf */,
+				924EACF524437D020063773F /* Cairo-Regular.ttf */,
+				924EACF424437D020063773F /* Cairo-SemiBold.ttf */,
+				9272837623F1DAB100436F42 /* Mohammad Bold normal.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9272837823F1DE3100436F42 /* DateCell */ = {
+			isa = PBXGroup;
+			children = (
+				9272837923F1DE7F00436F42 /* DateCell.swift */,
+				9272837A23F1DE7F00436F42 /* DateCell.xib */,
+			);
+			path = DateCell;
+			sourceTree = "<group>";
+		};
+		9272839523F5831200436F42 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				926D6DFA240DEDD2008D5E37 /* AstronomiesRepository */,
+				92B204602409E16700ED19E0 /* BorgAndTalaAndSuhailRepository */,
+				927283B223F9BC8900436F42 /* AllContentRepository */,
+				927283B123F9BC8100436F42 /* SettingsRepository */,
+				927283B023F9BC5200436F42 /* PrayTimeRepository */,
+				927283AF23F9BC4400436F42 /* VacationRepository */,
+				9272839623F583CA00436F42 /* DailyCalenderRepository */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9272839623F583CA00436F42 /* DailyCalenderRepository */ = {
+			isa = PBXGroup;
+			children = (
+				9272839723F595E000436F42 /* DailyCalendarRepository.swift */,
+				9272839923F5965000436F42 /* Impelementations */,
+			);
+			path = DailyCalenderRepository;
+			sourceTree = "<group>";
+		};
+		9272839923F5965000436F42 /* Impelementations */ = {
+			isa = PBXGroup;
+			children = (
+				9272839A23F596A000436F42 /* QCHDailyCalendarRepository.swift */,
+			);
+			path = Impelementations;
+			sourceTree = "<group>";
+		};
+		9272839C23F597AF00436F42 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				92E3505424100A3200424E71 /* Cache */,
+				9272828323EDC21900436F42 /* Services */,
+				9272839E23F948A200436F42 /* QCHRemoteAPI */,
+				927283AD23F9950700436F42 /* RemoteAPI.swift */,
+				927283AB23F98B7C00436F42 /* Response.swift */,
+				928857A0244BE07A00D267CC /* VariacType.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		9272839E23F948A200436F42 /* QCHRemoteAPI */ = {
+			isa = PBXGroup;
+			children = (
+				9272839F23F948C000436F42 /* QCHRemoteAPI.swift */,
+				927283A123F9495100436F42 /* Impelementations */,
+			);
+			path = QCHRemoteAPI;
+			sourceTree = "<group>";
+		};
+		927283A123F9495100436F42 /* Impelementations */ = {
+			isa = PBXGroup;
+			children = (
+				927283A223F9496D00436F42 /* QCHRemoteAPIImpl.swift */,
+			);
+			path = Impelementations;
+			sourceTree = "<group>";
+		};
+		927283AF23F9BC4400436F42 /* VacationRepository */ = {
+			isa = PBXGroup;
+			children = (
+				927283BD23F9BEEB00436F42 /* VecationRepository.swift */,
+				927283BF23F9BF2800436F42 /* Impelementations */,
+			);
+			path = VacationRepository;
+			sourceTree = "<group>";
+		};
+		927283B023F9BC5200436F42 /* PrayTimeRepository */ = {
+			isa = PBXGroup;
+			children = (
+				927283C223F9CF1F00436F42 /* PrayTimesRepository.swift */,
+				927283C423F9CFE000436F42 /* Impelementations */,
+			);
+			path = PrayTimeRepository;
+			sourceTree = "<group>";
+		};
+		927283B123F9BC8100436F42 /* SettingsRepository */ = {
+			isa = PBXGroup;
+			children = (
+				927283B923F9BE0900436F42 /* SettingsRepository.swift */,
+				927283B823F9BDED00436F42 /* Impelementations */,
+			);
+			path = SettingsRepository;
+			sourceTree = "<group>";
+		};
+		927283B223F9BC8900436F42 /* AllContentRepository */ = {
+			isa = PBXGroup;
+			children = (
+				927283B323F9BCC500436F42 /* AllContentRepository.swift */,
+				927283B523F9BD1C00436F42 /* Impelementations */,
+			);
+			path = AllContentRepository;
+			sourceTree = "<group>";
+		};
+		927283B523F9BD1C00436F42 /* Impelementations */ = {
+			isa = PBXGroup;
+			children = (
+				927283B623F9BD4200436F42 /* QCHAllContentRepository.swift */,
+			);
+			path = Impelementations;
+			sourceTree = "<group>";
+		};
+		927283B823F9BDED00436F42 /* Impelementations */ = {
+			isa = PBXGroup;
+			children = (
+				927283BB23F9BE5900436F42 /* QCHSettingsRepository.swift */,
+			);
+			path = Impelementations;
+			sourceTree = "<group>";
+		};
+		927283BF23F9BF2800436F42 /* Impelementations */ = {
+			isa = PBXGroup;
+			children = (
+				927283C023F9BF4800436F42 /* QCHVacationRepository.swift */,
+			);
+			path = Impelementations;
+			sourceTree = "<group>";
+		};
+		927283C423F9CFE000436F42 /* Impelementations */ = {
+			isa = PBXGroup;
+			children = (
+				927283C523F9CFFF00436F42 /* QCHPrayTimesRepository.swift */,
+			);
+			path = Impelementations;
+			sourceTree = "<group>";
+		};
+		927283D223FEFE7500436F42 /* BorgAndTalaCell */ = {
+			isa = PBXGroup;
+			children = (
+				927283D323FEFF7E00436F42 /* BorgAndTalaCell.swift */,
+				927283D423FEFF7E00436F42 /* BorgAndTalaCell.xib */,
+			);
+			path = BorgAndTalaCell;
+			sourceTree = "<group>";
+		};
+		928857A2244C0CF600D267CC /* AppDataLoader */ = {
+			isa = PBXGroup;
+			children = (
+				928857A6244C0D2300D267CC /* Coordinator */,
+				928857A5244C0D1C00D267CC /* Model */,
+				928857A4244C0D1700D267CC /* View */,
+				928857A3244C0D0C00D267CC /* Controller */,
+			);
+			path = AppDataLoader;
+			sourceTree = "<group>";
+		};
+		928857A3244C0D0C00D267CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				928857A9244C0E2700D267CC /* AppDataLoaderVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		928857A4244C0D1700D267CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				928857A7244C0DA800D267CC /* AppDataLoader.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		928857A5244C0D1C00D267CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		928857A6244C0D2300D267CC /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				928857AB244C110B00D267CC /* AppDataLoaderCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		928A05192406396200B42077 /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				928A051D2406398500B42077 /* Coordinator */,
+				928A051C2406397E00B42077 /* Model */,
+				928A051B2406397800B42077 /* View */,
+				928A051A2406396E00B42077 /* Controller */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		928A051A2406396E00B42077 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				928A051E2406404800B42077 /* ContactUsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		928A051B2406397800B42077 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				928A0524240648C400B42077 /* ContactUs.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		928A051C2406397E00B42077 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				928A05202406408300B42077 /* ContactUsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		928A051D2406398500B42077 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				928A05222406488000B42077 /* ContactUsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		928A054C2409626300B42077 /* AllContent */ = {
+			isa = PBXGroup;
+			children = (
+				928A05502409632700B42077 /* Coordinator */,
+				928A054F2409632200B42077 /* Model */,
+				928A054E2409631C00B42077 /* View */,
+				928A054D2409630F00B42077 /* Controller */,
+			);
+			path = AllContent;
+			sourceTree = "<group>";
+		};
+		928A054D2409630F00B42077 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				928A05532409645800B42077 /* AllContentVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		928A054E2409631C00B42077 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				926D6E06240DF468008D5E37 /* AstronomyCell */,
+				928A05572409663600B42077 /* AllContent.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		928A054F2409632200B42077 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				928A05552409653500B42077 /* AllContentModel.swift */,
+				926D6E00240DF3F4008D5E37 /* AstronomiesTableDataSource.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		928A05502409632700B42077 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				928A0551240963A900B42077 /* AllContentCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		92B204452409B9B500ED19E0 /* PrayerTimes */ = {
+			isa = PBXGroup;
+			children = (
+				92B204492409B9CC00ED19E0 /* Coordinator */,
+				92B204482409B9C800ED19E0 /* Model */,
+				92B204472409B9C300ED19E0 /* View */,
+				92B204462409B9BD00ED19E0 /* Controller */,
+			);
+			path = PrayerTimes;
+			sourceTree = "<group>";
+		};
+		92B204462409B9BD00ED19E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92B2044A2409B9E400ED19E0 /* PrayerTimesVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92B204472409B9C300ED19E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92B204502409C12500ED19E0 /* PrayerTimes.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92B204482409B9C800ED19E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92B2044C2409BA8600ED19E0 /* PrayerTimesModel.swift */,
+				92B2044E2409BB1100ED19E0 /* PrayerTimes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92B204492409B9CC00ED19E0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92B2045E2409D30000ED19E0 /* PrayerTimesCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		92B204552409D20D00ED19E0 /* BorgAndTalaAndSuhail */ = {
+			isa = PBXGroup;
+			children = (
+				92B204592409D23500ED19E0 /* Coordinator */,
+				92B204582409D22E00ED19E0 /* Model */,
+				92B204572409D22900ED19E0 /* View */,
+				92B204562409D21E00ED19E0 /* Controller */,
+			);
+			path = BorgAndTalaAndSuhail;
+			sourceTree = "<group>";
+		};
+		92B204562409D21E00ED19E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92B2045A2409D25100ED19E0 /* BorgAndTalaAndSuhailVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92B204572409D22900ED19E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92B2046E240B17C500ED19E0 /* AstrologicalCell */,
+				92B204682409E90000ED19E0 /* BorgAndTalaAndSuhail.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92B204582409D22E00ED19E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92B204662409E87C00ED19E0 /* BorgAndTalaAndSuhailModel.swift */,
+				92B2046A240B157300ED19E0 /* BorgAndTalaTableDataSource.swift */,
+				92B20473240B1FA700ED19E0 /* BorgAndTalaTableDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92B204592409D23500ED19E0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92B2045C2409D27900ED19E0 /* BorgAndTalaAndSuhailCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		92B204602409E16700ED19E0 /* BorgAndTalaAndSuhailRepository */ = {
+			isa = PBXGroup;
+			children = (
+				92B204612409E39700ED19E0 /* BorgAndTalaAndSuhailRepository.swift */,
+				92B204632409E39F00ED19E0 /* Impelementations */,
+			);
+			path = BorgAndTalaAndSuhailRepository;
+			sourceTree = "<group>";
+		};
+		92B204632409E39F00ED19E0 /* Impelementations */ = {
+			isa = PBXGroup;
+			children = (
+				92B204642409E3B800ED19E0 /* QCHBorgAndTalaAndSuhailRepository.swift */,
+			);
+			path = Impelementations;
+			sourceTree = "<group>";
+		};
+		92B2046E240B17C500ED19E0 /* AstrologicalCell */ = {
+			isa = PBXGroup;
+			children = (
+				92B2046F240B17E500ED19E0 /* AstrologicalCell.swift */,
+				92B20470240B17E500ED19E0 /* AstrologicalCell.xib */,
+			);
+			path = AstrologicalCell;
+			sourceTree = "<group>";
+		};
+		92B2047A240D747200ED19E0 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				92B2047E240D74AA00ED19E0 /* Coordinator */,
+				92B2047D240D748600ED19E0 /* Model */,
+				92B2047C240D748100ED19E0 /* View */,
+				92B2047B240D747B00ED19E0 /* Controller */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		92B2047B240D747B00ED19E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92B2047F240D74C500ED19E0 /* AboutVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92B2047C240D748100ED19E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92B20487240D8AD700ED19E0 /* FileCell */,
+				92B20486240D8ACF00ED19E0 /* TextCell */,
+				92B20485240D8AC600ED19E0 /* ImageCell */,
+				92B20483240D750700ED19E0 /* About.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92B2047D240D748600ED19E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92B20494240D9A1900ED19E0 /* AboutModel.swift */,
+				92B20496240D9BE200ED19E0 /* ContentTableDataSource.swift */,
+				92B20498240D9E2000ED19E0 /* ContentTableDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92B2047E240D74AA00ED19E0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92B20481240D74E900ED19E0 /* AboutCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		92B20485240D8AC600ED19E0 /* ImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				92B20488240D8B2000ED19E0 /* ImageCell.swift */,
+				92B20489240D8B2000ED19E0 /* ImageCell.xib */,
+			);
+			path = ImageCell;
+			sourceTree = "<group>";
+		};
+		92B20486240D8ACF00ED19E0 /* TextCell */ = {
+			isa = PBXGroup;
+			children = (
+				92B2048C240D91DF00ED19E0 /* TextCell.swift */,
+				92B2048D240D91DF00ED19E0 /* TextCell.xib */,
+			);
+			path = TextCell;
+			sourceTree = "<group>";
+		};
+		92B20487240D8AD700ED19E0 /* FileCell */ = {
+			isa = PBXGroup;
+			children = (
+				92B20490240D92D800ED19E0 /* FileCell.swift */,
+				92B20491240D92D800ED19E0 /* FileCell.xib */,
+			);
+			path = FileCell;
+			sourceTree = "<group>";
+		};
+		92B6DB14246109E700722027 /* MoonTimeCell */ = {
+			isa = PBXGroup;
+			children = (
+				92B6DB1524610A0F00722027 /* MoonTimeCell.swift */,
+				92B6DB1624610A0F00722027 /* MoonTimeCell.xib */,
+			);
+			path = MoonTimeCell;
+			sourceTree = "<group>";
+		};
+		92B6DB192461BBB600722027 /* TextDetails */ = {
+			isa = PBXGroup;
+			children = (
+				92B6DB1D2461BBE900722027 /* Coordinator */,
+				92B6DB1C2461BBE100722027 /* Model */,
+				92B6DB1B2461BBDA00722027 /* View */,
+				92B6DB1A2461BBD100722027 /* Controller */,
+			);
+			path = TextDetails;
+			sourceTree = "<group>";
+		};
+		92B6DB1A2461BBD100722027 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92B6DB1E2461BC1B00722027 /* TextDetailsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92B6DB1B2461BBDA00722027 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92B6DB20246210AA00722027 /* TextDetails.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92B6DB1C2461BBE100722027 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92B6DB1D2461BBE900722027 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92B6DB222462119700722027 /* TextDetailsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		92BB0BCF2477B53D008F36A6 /* DateCell */ = {
+			isa = PBXGroup;
+			children = (
+				92BB0BD02477B577008F36A6 /* CalendarDateCell.swift */,
+			);
+			path = DateCell;
+			sourceTree = "<group>";
+		};
+		92E3502D240E851000424E71 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				92E35031240E853100424E71 /* Coordinator */,
+				92E35030240E852C00424E71 /* Model */,
+				92E3502F240E852600424E71 /* View */,
+				92E3502E240E852000424E71 /* Controller */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		92E3502E240E852000424E71 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92E35032240E856300424E71 /* CalendarVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92E3502F240E852600424E71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92BB0BCF2477B53D008F36A6 /* DateCell */,
+				92E3503A240ED3D800424E71 /* EventCell */,
+				92E35036240E904000424E71 /* Calendar.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92E35030240E852C00424E71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92E35038240EC79E00424E71 /* CalendarModel.swift */,
+				92E3503F240ED68B00424E71 /* EventsTableDataSource.swift */,
+				92E35041240ED77E00424E71 /* EventsTableDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92E35031240E853100424E71 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92E35034240E857F00424E71 /* CalendarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		92E3503A240ED3D800424E71 /* EventCell */ = {
+			isa = PBXGroup;
+			children = (
+				92E3503B240ED3F100424E71 /* EventCell.swift */,
+				92E3503C240ED3F100424E71 /* EventCell.xib */,
+			);
+			path = EventCell;
+			sourceTree = "<group>";
+		};
+		92E35043240EEF3200424E71 /* Ramadan */ = {
+			isa = PBXGroup;
+			children = (
+				92E35047240EF04300424E71 /* Coordinator */,
+				92E35046240EF03E00424E71 /* Model */,
+				92E35045240EEF4400424E71 /* View */,
+				92E35044240EEF3B00424E71 /* Controller */,
+			);
+			path = Ramadan;
+			sourceTree = "<group>";
+		};
+		92E35044240EEF3B00424E71 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92E35048240EF06B00424E71 /* RamadanVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92E35045240EEF4400424E71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				921623EB242AE1D300D20B4C /* RamadanPrayersTimeCell */,
+				92E3504E240EF5A400424E71 /* Ramadan.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92E35046240EF03E00424E71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92E3504C240EF0E700424E71 /* RamadanModel.swift */,
+				921623E7242ADE1D00D20B4C /* RamadanTableDataSource.swift */,
+				921623E9242ADE7600D20B4C /* RamadanTableDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92E35047240EF04300424E71 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				92E3504A240EF08400424E71 /* RamadanCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		92E3505424100A3200424E71 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				92E3505224100A0E00424E71 /* MoyaCacheable.swift */,
+				92E3505524100A4500424E71 /* MoyaCacheablePlugin.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		92E3505724105E8E00424E71 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				92E3505824105EAF00424E71 /* NotificationManager.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		92E3505C24106B5700424E71 /* ManagingNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				92E3506024106B8200424E71 /* Coordinator */,
+				92E3505F24106B7D00424E71 /* Model */,
+				92E3505E24106B7800424E71 /* View */,
+				92E3505D24106B7200424E71 /* Controller */,
+			);
+			path = ManagingNotifications;
+			sourceTree = "<group>";
+		};
+		92E3505D24106B7200424E71 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92E3506124106BA800424E71 /* NotificationsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		92E3505E24106B7800424E71 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9263074524107E7400B176EA /* Notifications.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92E3505F24106B7D00424E71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9263074324106DFF00B176EA /* NotificationsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92E3506024106B8200424E71 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9263074724107E8800B176EA /* NotificationsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		92FBBB57243533B0004EB5B5 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				92FBBB58243533B0004EB5B5 /* NotificationService.swift */,
+				92FBBB5A243533B0004EB5B5 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		A9C4909B261DBB160037351E /* Prayers */ = {
+			isa = PBXGroup;
+			children = (
+				A9C4909C261DBB160037351E /* Prayers.swift */,
+				A90F2B272629CCF200CF1559 /* WidgetContent.swift */,
+				A90F2AA9262640D000CF1559 /* PrayersView.swift */,
+				A9C4909E261DBB1A0037351E /* Assets.xcassets */,
+				A9C490A0261DBB1A0037351E /* Info.plist */,
+			);
+			path = Prayers;
+			sourceTree = "<group>";
+		};
+		A9EB1E03258E33E000D97592 /* PrayersWidget */ = {
+			isa = PBXGroup;
+			children = (
+				A94E906E262A56FC006B083F /* background.png */,
+				A96C6A09258E89F40030D12A /* SRCountdownTimer.swift */,
+				A9EB1E04258E33E000D97592 /* TodayViewController.swift */,
+				A9EB1E06258E33E000D97592 /* MainInterface.storyboard */,
+				A94E9059262A4508006B083F /* Assets.xcassets */,
+				A9EB1E09258E33E000D97592 /* Info.plist */,
+			);
+			path = PrayersWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9272824D23EDB27A00436F42 /* QatarCalendarHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9272826223EDB27C00436F42 /* Build configuration list for PBXNativeTarget "QatarCalendarHouse" */;
+			buildPhases = (
+				6CEF2513F9F242E63BD0A141 /* [CP] Check Pods Manifest.lock */,
+				9272832B23EDCF0000436F42 /* R.swift */,
+				A9A2D81224AF6FAA009B42C8 /* ShellScript */,
+				9272824A23EDB27A00436F42 /* Sources */,
+				9272824B23EDB27A00436F42 /* Frameworks */,
+				9272824C23EDB27A00436F42 /* Resources */,
+				92FBBB61243533B0004EB5B5 /* Embed App Extensions */,
+				92FBBB6524360EEF004EB5B5 /* Embed Frameworks */,
+				10AC85C0B16B7C4BDA4E1EB8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92FBBB5C243533B0004EB5B5 /* PBXTargetDependency */,
+				A9EB1E0B258E33E000D97592 /* PBXTargetDependency */,
+				A9C490A2261DBB1A0037351E /* PBXTargetDependency */,
+			);
+			name = QatarCalendarHouse;
+			productName = QatarCalendarHouse;
+			productReference = 9272824E23EDB27A00436F42 /* التقويم القطري.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92FBBB55243533B0004EB5B5 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92FBBB5E243533B0004EB5B5 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				389A163B19C7A3BDA6D25BB9 /* [CP] Check Pods Manifest.lock */,
+				92FBBB52243533B0004EB5B5 /* Sources */,
+				92FBBB53243533B0004EB5B5 /* Frameworks */,
+				92FBBB54243533B0004EB5B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = 92FBBB56243533B0004EB5B5 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A9C49095261DBB160037351E /* PrayersExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C490A6261DBB1A0037351E /* Build configuration list for PBXNativeTarget "PrayersExtension" */;
+			buildPhases = (
+				670ACD86EF54747F01B76808 /* [CP] Check Pods Manifest.lock */,
+				A9C49092261DBB160037351E /* Sources */,
+				A9C49093261DBB160037351E /* Frameworks */,
+				A9C49094261DBB160037351E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrayersExtension;
+			productName = PrayersExtension;
+			productReference = A9C49096261DBB160037351E /* PrayersExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A9EB1DFF258E33E000D97592 /* PrayersWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9EB1E0F258E33E000D97592 /* Build configuration list for PBXNativeTarget "PrayersWidget" */;
+			buildPhases = (
+				974382F69F41D59A19E13E5E /* [CP] Check Pods Manifest.lock */,
+				A9EB1DFC258E33E000D97592 /* Sources */,
+				A9EB1DFD258E33E000D97592 /* Frameworks */,
+				A9EB1DFE258E33E000D97592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrayersWidget;
+			productName = PrayersWidget;
+			productReference = A9EB1E00258E33E000D97592 /* PrayersWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9272824623EDB27A00436F42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Infovass;
+				TargetAttributes = {
+					9272824D23EDB27A00436F42 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					92FBBB55243533B0004EB5B5 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					A9C49095261DBB160037351E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					A9EB1DFF258E33E000D97592 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+				};
+			};
+			buildConfigurationList = 9272824923EDB27A00436F42 /* Build configuration list for PBXProject "QatarCalendarHouse" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = ar;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ar,
+			);
+			mainGroup = 9272824523EDB27A00436F42;
+			productRefGroup = 9272824F23EDB27A00436F42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9272824D23EDB27A00436F42 /* QatarCalendarHouse */,
+				92FBBB55243533B0004EB5B5 /* OneSignalNotificationServiceExtension */,
+				A9EB1DFF258E33E000D97592 /* PrayersWidget */,
+				A9C49095261DBB160037351E /* PrayersExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9272824C23EDB27A00436F42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9221DD6524000BA300C0591C /* DayPhenomenaCell.xib in Resources */,
+				924EACFD24437D110063773F /* Cairo-SemiBold.ttf in Resources */,
+				9272835B23EDD09000436F42 /* SideMenu.storyboard in Resources */,
+				92B204512409C12500ED19E0 /* PrayerTimes.storyboard in Resources */,
+				9221DD5623FF123200C0591C /* PrayerTimesCell.xib in Resources */,
+				9235441524061207001007A1 /* Vacations.storyboard in Resources */,
+				924EACFC24437D110063773F /* Cairo-Regular.ttf in Resources */,
+				928A05582409663600B42077 /* AllContent.storyboard in Resources */,
+				928857A8244C0DA800D267CC /* AppDataLoader.storyboard in Resources */,
+				9221DD6024000A9B00C0591C /* DayContentCell.xib in Resources */,
+				92B2048F240D91DF00ED19E0 /* TextCell.xib in Resources */,
+				926D6E05240DF463008D5E37 /* AstronomyCell.xib in Resources */,
+				9272825E23EDB27C00436F42 /* LaunchScreen.storyboard in Resources */,
+				9272837723F1DAB100436F42 /* Mohammad Bold normal.ttf in Resources */,
+				926571A12422EC3B009C8086 /* MonthlyCalendarPhenomenaCell.xib in Resources */,
+				92B2048B240D8B2000ED19E0 /* ImageCell.xib in Resources */,
+				92B20493240D92D800ED19E0 /* FileCell.xib in Resources */,
+				924EACF924437D110063773F /* Cairo-Bold.ttf in Resources */,
+				92C3D189242C392400365358 /* AstrologicalDetails.storyboard in Resources */,
+				9221DD5123FF0EEF00C0591C /* MasjidImageCell.xib in Resources */,
+				924EACFA24437D110063773F /* Cairo-ExtraLight.ttf in Resources */,
+				A96BFA7025F7692100EBAE59 /* azan.caf in Resources */,
+				92B20484240D750700ED19E0 /* About.storyboard in Resources */,
+				92B6DB21246210AA00722027 /* TextDetails.storyboard in Resources */,
+				921623EF242AE1EB00D20B4C /* RamadanPrayersTimeCell.xib in Resources */,
+				9221DD5B24000A3300C0591C /* SeasonCell.xib in Resources */,
+				9272837C23F1DE7F00436F42 /* DateCell.xib in Resources */,
+				9235441A2406205B001007A1 /* VacationCell.xib in Resources */,
+				92E3503E240ED3F100424E71 /* EventCell.xib in Resources */,
+				92B20472240B17E500ED19E0 /* AstrologicalCell.xib in Resources */,
+				9272825B23EDB27C00436F42 /* Assets.xcassets in Resources */,
+				A96BFA6F25F7692100EBAE59 /* beeb.caf in Resources */,
+				92B6DB1824610A0F00722027 /* MoonTimeCell.xib in Resources */,
+				924EACFB24437D110063773F /* Cairo-Light.ttf in Resources */,
+				92E35037240E904000424E71 /* Calendar.storyboard in Resources */,
+				A93536C725096B2A009C04B5 /* iqama.caf in Resources */,
+				924EACF824437D110063773F /* Cairo-Black.ttf in Resources */,
+				92B204692409E90000ED19E0 /* BorgAndTalaAndSuhail.storyboard in Resources */,
+				9263074B241092F100B176EA /* Adhan-Makkah.mp3 in Resources */,
+				9272837423F1A01100436F42 /* Qibla.storyboard in Resources */,
+				920D61B3241F9A1D0043EC09 /* MonthlyCalendar.storyboard in Resources */,
+				928A0525240648C400B42077 /* ContactUs.storyboard in Resources */,
+				9263074624107E7400B176EA /* Notifications.storyboard in Resources */,
+				92E3504F240EF5A400424E71 /* Ramadan.storyboard in Resources */,
+				9265719C2422EBEA009C8086 /* MonthlyCalendarPrayerTimesCell.xib in Resources */,
+				9272835F23EDD09000436F42 /* Main.storyboard in Resources */,
+				9272835C23EDD09000436F42 /* SideMenuCell.xib in Resources */,
+				9272836523EDD09000436F42 /* Home.storyboard in Resources */,
+				927283D623FEFF7E00436F42 /* BorgAndTalaCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FBBB54243533B0004EB5B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93536C825096B2A009C04B5 /* iqama.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C49094261DBB160037351E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90F2AB926264E3200CF1559 /* Cairo-SemiBold.ttf in Resources */,
+				A90F2AB526264E2F00CF1559 /* Cairo-Regular.ttf in Resources */,
+				A90F2AB126264E2B00CF1559 /* Cairo-Bold.ttf in Resources */,
+				A9C4909F261DBB1A0037351E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EB1DFE258E33E000D97592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E9AFC625BD067000D4E516 /* Cairo-Bold.ttf in Resources */,
+				A94E906F262A56FC006B083F /* background.png in Resources */,
+				A9E9AFCB25BD067A00D4E516 /* Cairo-SemiBold.ttf in Resources */,
+				A9EB1E08258E33E000D97592 /* MainInterface.storyboard in Resources */,
+				A9E9AFCE25BD069A00D4E516 /* Cairo-Regular.ttf in Resources */,
+				A94E906A262A55AA006B083F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10AC85C0B16B7C4BDA4E1EB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QatarCalendarHouse/Pods-QatarCalendarHouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QatarCalendarHouse/Pods-QatarCalendarHouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QatarCalendarHouse/Pods-QatarCalendarHouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		389A163B19C7A3BDA6D25BB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		670ACD86EF54747F01B76808 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrayersExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CEF2513F9F242E63BD0A141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QatarCalendarHouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9272832B23EDCF0000436F42 /* R.swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		974382F69F41D59A19E13E5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrayersWidget-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A2D81224AF6FAA009B42C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -d \"${SYMROOT}/Release${EFFECTIVE_PLATFORM_NAME}/\" ] && [ \"${SYMROOT}/Release${EFFECTIVE_PLATFORM_NAME}/\" != \"${SYMROOT}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/\" ] \nthen\n  cp -f -R \"${SYMROOT}/Release${EFFECTIVE_PLATFORM_NAME}/\" \"${SYMROOT}/${CONFIGURATION}${EFFECTIVE_PLATFORM_NAME}/\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9272824A23EDB27A00436F42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C3D187242C368A00365358 /* AstrologicalDetailsCoordinator.swift in Sources */,
+				92E3505324100A0E00424E71 /* MoyaCacheable.swift in Sources */,
+				928A05212406408300B42077 /* ContactUsModel.swift in Sources */,
+				928857AA244C0E2700D267CC /* AppDataLoaderVC.swift in Sources */,
+				92B2044F2409BB1100ED19E0 /* PrayerTimes.swift in Sources */,
+				92B2046B240B157300ED19E0 /* BorgAndTalaTableDataSource.swift in Sources */,
+				927283AA23F9823200436F42 /* QCH.swift in Sources */,
+				927282FA23EDC21900436F42 /* DoubleExtension.swift in Sources */,
+				92B204672409E87C00ED19E0 /* BorgAndTalaAndSuhailModel.swift in Sources */,
+				9272836123EDD09000436F42 /* HomeVC.swift in Sources */,
+				927282F523EDC21900436F42 /* UINavigationControllerExtension.swift in Sources */,
+				92B20482240D74E900ED19E0 /* AboutCoordinator.swift in Sources */,
+				924EACEC2442952B0063773F /* CATransitionExtension.swift in Sources */,
+				92BB0BD22477B577008F36A6 /* CalendarDateCell.swift in Sources */,
+				927283AE23F9950700436F42 /* RemoteAPI.swift in Sources */,
+				927282ED23EDC21900436F42 /* UITextFieldExtension.swift in Sources */,
+				927282F923EDC21900436F42 /* UITabelViewCellExtension.swift in Sources */,
+				927283C123F9BF4800436F42 /* QCHVacationRepository.swift in Sources */,
+				92E3505624100A4500424E71 /* MoyaCacheablePlugin.swift in Sources */,
+				9272838623F1F89800436F42 /* HomeTableDelegate.swift in Sources */,
+				92B20480240D74C500ED19E0 /* AboutVC.swift in Sources */,
+				9272839223F5820D00436F42 /* Setting.swift in Sources */,
+				92E3504B240EF08400424E71 /* RamadanCoordinator.swift in Sources */,
+				927283C623F9CFFF00436F42 /* QCHPrayTimesRepository.swift in Sources */,
+				9221DD5A24000A3300C0591C /* SeasonCell.swift in Sources */,
+				927282F423EDC21900436F42 /* UIFontExtension.swift in Sources */,
+				920D61AF241F95440043EC09 /* MonthlyCalendarCoordinator.swift in Sources */,
+				924EACF12442E10F0063773F /* QCHContentStorage.swift in Sources */,
+				92E3505924105EAF00424E71 /* NotificationManager.swift in Sources */,
+				923544192406205B001007A1 /* VacationCell.swift in Sources */,
+				9272830623EDC21900436F42 /* SideMenuItem.swift in Sources */,
+				927282F023EDC21900436F42 /* UIViewControllerExtension.swift in Sources */,
+				92E35033240E856300424E71 /* CalendarVC.swift in Sources */,
+				9272838C23F57E8300436F42 /* DayCalender.swift in Sources */,
+				A925401C2594058B0059610F /* AlarmsVC.swift in Sources */,
+				927283B723F9BD4200436F42 /* QCHAllContentRepository.swift in Sources */,
+				927282CE23EDC21900436F42 /* Coordinator.swift in Sources */,
+				928A05232406488000B42077 /* ContactUsCoordinator.swift in Sources */,
+				922AF364242AF17E00EC2352 /* AstrologicalDetailsVC.swift in Sources */,
+				9272835823EDD09000436F42 /* SideMenuModel.swift in Sources */,
+				92B2046D240B15DE00ED19E0 /* Astrological.swift in Sources */,
+				926D6E01240DF3F4008D5E37 /* AstronomiesTableDataSource.swift in Sources */,
+				9221DD5023FF0EEF00C0591C /* MasjidImageCell.swift in Sources */,
+				928A0514240627AC00B42077 /* VacationsModel.swift in Sources */,
+				927282EE23EDC21900436F42 /* UILabelExtension.swift in Sources */,
+				928A051624062B9B00B42077 /* VacationsTableDataSource.swift in Sources */,
+				927282F223EDC21900436F42 /* UIViewExtension.swift in Sources */,
+				92354407240590DE001007A1 /* Tala.swift in Sources */,
+				92B2048E240D91DF00ED19E0 /* TextCell.swift in Sources */,
+				92B20497240D9BE200ED19E0 /* ContentTableDataSource.swift in Sources */,
+				926571A02422EC3B009C8086 /* MonthlyCalendarPhenomenaCell.swift in Sources */,
+				924EACEF2442E0510063773F /* ContentStorage.swift in Sources */,
+				9272839423F5828700436F42 /* ContentItem.swift in Sources */,
+				9272830923EDC21900436F42 /* Sociable.swift in Sources */,
+				921623E8242ADE1D00D20B4C /* RamadanTableDataSource.swift in Sources */,
+				92B2045D2409D27900ED19E0 /* BorgAndTalaAndSuhailCoordinator.swift in Sources */,
+				920D61B1241F95AA0043EC09 /* MonthlyCalendarModel.swift in Sources */,
+				927282D423EDC21900436F42 /* ExtendedNavBarView.swift in Sources */,
+				9221DD5F24000A9B00C0591C /* DayContentCell.swift in Sources */,
+				9272825223EDB27A00436F42 /* AppDelegate.swift in Sources */,
+				92FBBB4C24326329004EB5B5 /* PrayerTimeNotification.swift in Sources */,
+				926571A32422ECEC009C8086 /* MonthlyCalendarTableDelegate.swift in Sources */,
+				927283A323F9496D00436F42 /* QCHRemoteAPIImpl.swift in Sources */,
+				92B20471240B17E500ED19E0 /* AstrologicalCell.swift in Sources */,
+				927282F823EDC21900436F42 /* UIImageExtension.swift in Sources */,
+				927282CB23EDC21900436F42 /* Storyboarded.swift in Sources */,
+				9272836223EDD09000436F42 /* HomeModel.swift in Sources */,
+				A90F2B282629CCF200CF1559 /* WidgetContent.swift in Sources */,
+				A96C6AB0258EB2750030D12A /* StringExtension2.swift in Sources */,
+				928A051824062C8400B42077 /* VacationsTableDelegate.swift in Sources */,
+				927282FB23EDC21900436F42 /* DateExtension.swift in Sources */,
+				928A05562409653500B42077 /* AllContentModel.swift in Sources */,
+				92B6DB1724610A0F00722027 /* MoonTimeCell.swift in Sources */,
+				9221DD5523FF123200C0591C /* PrayerTimesCell.swift in Sources */,
+				927282CA23EDC21900436F42 /* QCHRouter.swift in Sources */,
+				9272830A23EDC21900436F42 /* Loadable.swift in Sources */,
+				920D61AD241F95000043EC09 /* MonthlyCalendarVC.swift in Sources */,
+				92E35051240FF01900424E71 /* Asseted.swift in Sources */,
+				9272835723EDD09000436F42 /* SideMenuVC.swift in Sources */,
+				927282F123EDC21900436F42 /* UITableViewExtension.swift in Sources */,
+				927282CC23EDC21900436F42 /* Router.swift in Sources */,
+				92E35042240ED77E00424E71 /* EventsTableDelegate.swift in Sources */,
+				927283C323F9CF1F00436F42 /* PrayTimesRepository.swift in Sources */,
+				923544112405FF84001007A1 /* VacationsVC.swift in Sources */,
+				926D6DFD240DEDFA008D5E37 /* AstronomiesRepository.swift in Sources */,
+				9235440524058BC9001007A1 /* Borg.swift in Sources */,
+				927282EF23EDC21900436F42 /* IntExtension.swift in Sources */,
+				9272835E23EDD09000436F42 /* MainVC.swift in Sources */,
+				9272839023F581AF00436F42 /* Capital.swift in Sources */,
+				92E35035240E857F00424E71 /* CalendarCoordinator.swift in Sources */,
+				9272836023EDD09000436F42 /* HomeCoordinator.swift in Sources */,
+				92B20499240D9E2000ED19E0 /* ContentTableDelegate.swift in Sources */,
+				92B2045F2409D30000ED19E0 /* PrayerTimesCoordinator.swift in Sources */,
+				9221DD6424000BA300C0591C /* DayPhenomenaCell.swift in Sources */,
+				9272832523EDCA8700436F42 /* ProgressHUD.swift in Sources */,
+				927283B423F9BCC500436F42 /* AllContentRepository.swift in Sources */,
+				928857AC244C110B00D267CC /* AppDataLoaderCoordinator.swift in Sources */,
+				926D6DFF240DEE49008D5E37 /* QCHAstronomiesRepository.swift in Sources */,
+				927283CB23FCFFF000436F42 /* Version.swift in Sources */,
+				92C3D185242C2F6500365358 /* AstrologicalDetailsModel.swift in Sources */,
+				9272826723EDC1D600436F42 /* ApplicationCoordinator.swift in Sources */,
+				9272835623EDD09000436F42 /* SideMenuCoordinator.swift in Sources */,
+				9263074424106DFF00B176EA /* NotificationsModel.swift in Sources */,
+				9272838E23F580FA00436F42 /* Vacation.swift in Sources */,
+				A925402525940A750059610F /* Alarm.swift in Sources */,
+				926571972422EA93009C8086 /* MonthlyCalendarTableDataSource.swift in Sources */,
+				9272832D23EDCFDA00436F42 /* R.generated.swift in Sources */,
+				92E35040240ED68B00424E71 /* EventsTableDataSource.swift in Sources */,
+				92E3505B2410634E00424E71 /* UserDefaultsExtension.swift in Sources */,
+				9263074824107E8800B176EA /* NotificationsCoordinator.swift in Sources */,
+				9288579F244BAE2500D267CC /* TableVersion.swift in Sources */,
+				92B6DB232462119700722027 /* TextDetailsCoordinator.swift in Sources */,
+				92B2044B2409B9E400ED19E0 /* PrayerTimesVC.swift in Sources */,
+				92B20479240D6AFB00ED19E0 /* ArrayExtension.swift in Sources */,
+				92B20474240B1FA700ED19E0 /* BorgAndTalaTableDelegate.swift in Sources */,
+				92B2044D2409BA8600ED19E0 /* PrayerTimesModel.swift in Sources */,
+				927283BC23F9BE5900436F42 /* QCHSettingsRepository.swift in Sources */,
+				9272830B23EDC21900436F42 /* Sharable.swift in Sources */,
+				9272838423F1F51400436F42 /* HomeTableDataSource.swift in Sources */,
+				927282F723EDC21900436F42 /* DictionaryExtension.swift in Sources */,
+				927282EC23EDC21900436F42 /* UIColorExtension.swift in Sources */,
+				92E35039240EC79E00424E71 /* CalendarModel.swift in Sources */,
+				9288579D244BA73500D267CC /* ApplicationContentModel.swift in Sources */,
+				927283BE23F9BEEB00436F42 /* VecationRepository.swift in Sources */,
+				9272839B23F596A000436F42 /* QCHDailyCalendarRepository.swift in Sources */,
+				92E3503D240ED3F100424E71 /* EventCell.swift in Sources */,
+				92E35049240EF06B00424E71 /* RamadanVC.swift in Sources */,
+				92B2045B2409D25100ED19E0 /* BorgAndTalaAndSuhailVC.swift in Sources */,
+				927283A023F948C000436F42 /* QCHRemoteAPI.swift in Sources */,
+				927282FC23EDC21900436F42 /* UINavigationItemExtention.swift in Sources */,
+				927283D523FEFF7E00436F42 /* BorgAndTalaCell.swift in Sources */,
+				926D6DF9240DEC03008D5E37 /* Astronomy.swift in Sources */,
+				928857A1244BE07A00D267CC /* VariacType.swift in Sources */,
+				927282F323EDC21900436F42 /* UIStackViewExtension.swift in Sources */,
+				92B204622409E39700ED19E0 /* BorgAndTalaAndSuhailRepository.swift in Sources */,
+				92E3504D240EF0E700424E71 /* RamadanModel.swift in Sources */,
+				92B6DB1F2461BC1B00722027 /* TextDetailsVC.swift in Sources */,
+				9272839823F595E000436F42 /* DailyCalendarRepository.swift in Sources */,
+				927282EB23EDC21900436F42 /* UIButtonExtension.swift in Sources */,
+				92B2048A240D8B2000ED19E0 /* ImageCell.swift in Sources */,
+				92E3506224106BA800424E71 /* NotificationsVC.swift in Sources */,
+				92B20495240D9A1900ED19E0 /* AboutModel.swift in Sources */,
+				928A05542409645800B42077 /* AllContentVC.swift in Sources */,
+				927283AC23F98B7C00436F42 /* Response.swift in Sources */,
+				9265719B2422EBEA009C8086 /* MonthlyCalendarPrayerTimesCell.swift in Sources */,
+				9272837B23F1DE7F00436F42 /* DateCell.swift in Sources */,
+				9272837223EEF69300436F42 /* QiblaVC.swift in Sources */,
+				927282F623EDC21900436F42 /* StringExtension.swift in Sources */,
+				926D6E04240DF463008D5E37 /* AstronomyCell.swift in Sources */,
+				921623EA242ADE7600D20B4C /* RamadanTableDelegate.swift in Sources */,
+				A925402A259411910059610F /* AlarmCell.swift in Sources */,
+				9235440F2405FF4F001007A1 /* VacationsCoordinator.swift in Sources */,
+				928A051F2406404800B42077 /* ContactUsVC.swift in Sources */,
+				9272835D23EDD09000436F42 /* SideMenuCell.swift in Sources */,
+				927283BA23F9BE0900436F42 /* SettingsRepository.swift in Sources */,
+				921623EE242AE1EB00D20B4C /* RamadanPrayersTimeCell.swift in Sources */,
+				927282CF23EDC21900436F42 /* ADVSegmentedControl.swift in Sources */,
+				928A0552240963A900B42077 /* AllContentCoordinator.swift in Sources */,
+				927282CD23EDC21900436F42 /* Showable.swift in Sources */,
+				92B204652409E3B800ED19E0 /* QCHBorgAndTalaAndSuhailRepository.swift in Sources */,
+				92B20492240D92D800ED19E0 /* FileCell.swift in Sources */,
+				9235441324060B8A001007A1 /* QiblaCoordinator.swift in Sources */,
+				927282E223EDC21900436F42 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92FBBB52243533B0004EB5B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FBBB59243533B0004EB5B5 /* NotificationService.swift in Sources */,
+				A90F2B372629D81000CF1559 /* WidgetContent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C49092261DBB160037351E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C4909D261DBB160037351E /* Prayers.swift in Sources */,
+				A90F2B292629CCF200CF1559 /* WidgetContent.swift in Sources */,
+				A90F2B4A2629EF0000CF1559 /* StringExtension.swift in Sources */,
+				A90F2B232629CB6600CF1559 /* DayCalender.swift in Sources */,
+				A90F2AAA262640D000CF1559 /* PrayersView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9EB1DFC258E33E000D97592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A96C6A53258EB0960030D12A /* Vacation.swift in Sources */,
+				A96C6AAC258EB21A0030D12A /* MoyaCacheablePlugin.swift in Sources */,
+				A96C6A36258EB0400030D12A /* RemoteAPI.swift in Sources */,
+				A96C6A97258EB1700030D12A /* QCHContentStorage.swift in Sources */,
+				A96C6A30258EB01D0030D12A /* NotificationsModel.swift in Sources */,
+				A96C6A8E258EB1410030D12A /* Astrological.swift in Sources */,
+				A96C6A2A258EAFFE0030D12A /* DayCalender.swift in Sources */,
+				A96C6A9A258EB17D0030D12A /* NotificationManager.swift in Sources */,
+				A96C6A9D258EB18D0030D12A /* UserDefaultsExtension.swift in Sources */,
+				A96C6AA0258EB1A90030D12A /* StringExtension.swift in Sources */,
+				A96C6A6E258EB0E50030D12A /* QCHRemoteAPIImpl.swift in Sources */,
+				A96C6A5F258EB0B20030D12A /* Version.swift in Sources */,
+				A96C6A8B258EB11D0030D12A /* ContentStorage.swift in Sources */,
+				A96C6A33258EB0240030D12A /* QCHRemoteAPI.swift in Sources */,
+				A96C6A68258EB0C50030D12A /* Astronomy.swift in Sources */,
+				A96C6A6B258EB0CF0030D12A /* TableVersion.swift in Sources */,
+				A96C6AA3258EB1C90030D12A /* DateExtension.swift in Sources */,
+				A96C6A50258EB0810030D12A /* Response.swift in Sources */,
+				A96C6A59258EB0A30030D12A /* ContentItem.swift in Sources */,
+				A96C6A62258EB0B80030D12A /* Tala.swift in Sources */,
+				A96C6A71258EB0ED0030D12A /* QCHDailyCalendarRepository.swift in Sources */,
+				A90F2B422629D83500CF1559 /* WidgetContent.swift in Sources */,
+				A96C6A56258EB09D0030D12A /* Setting.swift in Sources */,
+				A96C6A5C258EB0AA0030D12A /* Capital.swift in Sources */,
+				A96C6AA9258EB20D0030D12A /* MoyaCacheable.swift in Sources */,
+				A96C6A0A258E89F50030D12A /* SRCountdownTimer.swift in Sources */,
+				A96C6A91258EB14A0030D12A /* QCH.swift in Sources */,
+				A96C6A94258EB15F0030D12A /* VariacType.swift in Sources */,
+				A9EB1E05258E33E000D97592 /* TodayViewController.swift in Sources */,
+				A96C6A2D258EB00E0030D12A /* DailyCalendarRepository.swift in Sources */,
+				A96C6AA6258EB1FC0030D12A /* DictionaryExtension.swift in Sources */,
+				A96C6A10258EAF250030D12A /* HomeModel.swift in Sources */,
+				A96C6A65258EB0BE0030D12A /* Borg.swift in Sources */,
+				A925402625940A750059610F /* Alarm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92FBBB5C243533B0004EB5B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92FBBB55243533B0004EB5B5 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 92FBBB5B243533B0004EB5B5 /* PBXContainerItemProxy */;
+		};
+		A9C490A2261DBB1A0037351E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9C49095261DBB160037351E /* PrayersExtension */;
+			targetProxy = A9C490A1261DBB1A0037351E /* PBXContainerItemProxy */;
+		};
+		A9EB1E0B258E33E000D97592 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9EB1DFF258E33E000D97592 /* PrayersWidget */;
+			targetProxy = A9EB1E0A258E33E000D97592 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9272825C23EDB27C00436F42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9272825D23EDB27C00436F42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A9EB1E06258E33E000D97592 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9EB1E07258E33E000D97592 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9272826023EDB27C00436F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9272826123EDB27C00436F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9272826323EDB27C00436F42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CD5B26789C77C2DEC159748 /* Pods-QatarCalendarHouse.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "QatarCalendarHouse/التقويم القطري.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SC8D222JY;
+				INFOPLIST_FILE = "$(SRCROOT)/QatarCalendarHouse/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QatarCalendarHouse;
+				PRODUCT_NAME = "التقويم القطري";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9272826423EDB27C00436F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC1472D8F12CDABBCBF1C1B /* Pods-QatarCalendarHouse.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "QatarCalendarHouse/التقويم القطري.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SC8D222JY;
+				INFOPLIST_FILE = "$(SRCROOT)/QatarCalendarHouse/Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QatarCalendarHouse;
+				PRODUCT_NAME = "التقويم القطري";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		92FBBB5F243533B0004EB5B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0AD8DA2153C1C9475D1504 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SC8D222JY;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QatarCalendarHouse.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		92FBBB60243533B0004EB5B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CE5C85370C59CA20845536C /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3SC8D222JY;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QatarCalendarHouse.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A9C490A4261DBB1A0037351E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A68F455C6A17E1349052FD66 /* Pods-PrayersExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = PrayersExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SC8D222JY;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Prayers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.QatarCalendarHouse.Prayers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9C490A5261DBB1A0037351E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31EC10BA2669BDD92866A35E /* Pods-PrayersExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = PrayersExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SC8D222JY;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = Prayers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.QatarCalendarHouse.Prayers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A9EB1E0D258E33E000D97592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B93203529990FE54D0CBD94 /* Pods-PrayersWidget.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SC8D222JY;
+				INFOPLIST_FILE = PrayersWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QatarCalendarHouse.PrayersWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9EB1E0E258E33E000D97592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C91F526E9F54275F5D4C3A /* Pods-PrayersWidget.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SC8D222JY;
+				INFOPLIST_FILE = PrayersWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QatarCalendarHouse.PrayersWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9272824923EDB27A00436F42 /* Build configuration list for PBXProject "QatarCalendarHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9272826023EDB27C00436F42 /* Debug */,
+				9272826123EDB27C00436F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9272826223EDB27C00436F42 /* Build configuration list for PBXNativeTarget "QatarCalendarHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9272826323EDB27C00436F42 /* Debug */,
+				9272826423EDB27C00436F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92FBBB5E243533B0004EB5B5 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92FBBB5F243533B0004EB5B5 /* Debug */,
+				92FBBB60243533B0004EB5B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C490A6261DBB1A0037351E /* Build configuration list for PBXNativeTarget "PrayersExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C490A4261DBB1A0037351E /* Debug */,
+				A9C490A5261DBB1A0037351E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9EB1E0F258E33E000D97592 /* Build configuration list for PBXNativeTarget "PrayersWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EB1E0D258E33E000D97592 /* Debug */,
+				A9EB1E0E258E33E000D97592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9272824623EDB27A00436F42 /* Project object */;
+}

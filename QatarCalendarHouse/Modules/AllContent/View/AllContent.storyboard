@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HCC-vP-hc7">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+        <array key="Cairo-SemiBold.ttf">
+            <string>Cairo-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--All ContentVC-->
+        <scene sceneID="x3f-9w-788">
+            <objects>
+                <viewController id="HCC-vP-hc7" customClass="AllContentVC" customModule="التقويم_القطري" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5oZ-Vl-kaF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jzx-8w-i8g">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gaY-vT-f5q">
+                                <rect key="frame" x="20" y="44" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gaY-vT-f5q" secondAttribute="height" multiplier="1:1" id="gne-n0-V1v"/>
+                                    <constraint firstAttribute="width" constant="35" id="nKO-D1-JX0"/>
+                                </constraints>
+                                <color key="tintColor" name="primary"/>
+                                <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="onCloseButtonPressed:" destination="HCC-vP-hc7" eventType="touchUpInside" id="tCV-Ii-D9k"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDw-mm-5Ne">
+                                <rect key="frame" x="20" y="87" width="374" height="639"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ex6-OX-eoM">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="58.5"/>
+                                        <string key="text">اصدارات
+ دار التقويم القطري</string>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="25"/>
+                                        <color key="textColor" name="primary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gk8-CC-7dE">
+                                        <rect key="frame" x="80" y="68.5" width="214" height="61.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cp-VL-UUq">
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="61.5"/>
+                                                <state key="normal" image="astronomical_systems"/>
+                                                <state key="selected" image="astronomical_systems_hov"/>
+                                                <connections>
+                                                    <action selector="onChooseCategoryButtonPressed:" destination="HCC-vP-hc7" eventType="touchUpInside" id="W5O-1t-JFm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEc-Ai-6Iq">
+                                                <rect key="frame" x="55.5" y="0.0" width="47.5" height="61.5"/>
+                                                <state key="normal" image="astronomical_approvals"/>
+                                                <state key="selected" image="astronomical_approvals_hov"/>
+                                                <connections>
+                                                    <action selector="onChooseCategoryButtonPressed:" destination="HCC-vP-hc7" eventType="touchUpInside" id="Xpc-eq-qvE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSj-yu-l54">
+                                                <rect key="frame" x="111" y="0.0" width="47.5" height="61.5"/>
+                                                <state key="normal" image="hijri_calendar_guide"/>
+                                                <state key="selected" image="hijri_calendar_guide_hov"/>
+                                                <connections>
+                                                    <action selector="onChooseCategoryButtonPressed:" destination="HCC-vP-hc7" eventType="touchUpInside" id="scI-lh-FqG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98m-IF-K0H">
+                                                <rect key="frame" x="166.5" y="0.0" width="47.5" height="61.5"/>
+                                                <state key="normal" image="gregorian_calendar_guide"/>
+                                                <state key="selected" image="gregorian_calendar_guide_hov"/>
+                                                <connections>
+                                                    <action selector="onChooseCategoryButtonPressed:" destination="HCC-vP-hc7" eventType="touchUpInside" id="XK8-yK-FrF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-vI-meg">
+                                        <rect key="frame" x="0.0" y="150" width="374" height="489"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gn9-8i-1wH">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التقويم الهجري" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="iCQ-EZ-Bc1">
+                                                        <rect key="frame" x="5" y="8" width="364" height="20"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-SemiBold" family="Cairo" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="primary"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="iCQ-EZ-Bc1" secondAttribute="trailing" constant="5" id="2jI-Bo-CEy"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="7sc-5s-h7c"/>
+                                                    <constraint firstAttribute="bottom" secondItem="iCQ-EZ-Bc1" secondAttribute="bottom" constant="8" id="TsF-YW-fPD"/>
+                                                    <constraint firstItem="iCQ-EZ-Bc1" firstAttribute="leading" secondItem="Gn9-8i-1wH" secondAttribute="leading" constant="5" id="jfE-rR-00D"/>
+                                                    <constraint firstItem="iCQ-EZ-Bc1" firstAttribute="top" secondItem="Gn9-8i-1wH" secondAttribute="top" constant="8" id="rZR-qo-TCe"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_watermark" translatesAutoresizingMaskIntoConstraints="NO" id="vye-Vm-nfo">
+                                                <rect key="frame" x="10" y="41" width="354" height="448"/>
+                                                <color key="backgroundColor" name="secondaryBackground"/>
+                                            </imageView>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mbi-EP-DCP">
+                                                <rect key="frame" x="10" y="41" width="354" height="448"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tableView>
+                                        </subviews>
+                                        <color key="backgroundColor" name="secondaryBackground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="mbi-EP-DCP" secondAttribute="trailing" constant="10" id="5MD-nz-hdt"/>
+                                            <constraint firstItem="mbi-EP-DCP" firstAttribute="top" secondItem="Gn9-8i-1wH" secondAttribute="bottom" constant="5" id="8O1-EZ-q2O"/>
+                                            <constraint firstItem="Gn9-8i-1wH" firstAttribute="leading" secondItem="ZQw-vI-meg" secondAttribute="leading" id="F7o-yA-doI"/>
+                                            <constraint firstItem="vye-Vm-nfo" firstAttribute="trailing" secondItem="mbi-EP-DCP" secondAttribute="trailing" id="HsF-b1-peE"/>
+                                            <constraint firstAttribute="bottom" secondItem="mbi-EP-DCP" secondAttribute="bottom" id="IWh-Xt-Ckn"/>
+                                            <constraint firstItem="mbi-EP-DCP" firstAttribute="leading" secondItem="ZQw-vI-meg" secondAttribute="leading" constant="10" id="Rhq-i5-mz2"/>
+                                            <constraint firstItem="vye-Vm-nfo" firstAttribute="leading" secondItem="mbi-EP-DCP" secondAttribute="leading" id="Vni-rl-GIr"/>
+                                            <constraint firstItem="Gn9-8i-1wH" firstAttribute="top" secondItem="ZQw-vI-meg" secondAttribute="top" id="X2z-YU-iJa"/>
+                                            <constraint firstItem="vye-Vm-nfo" firstAttribute="top" secondItem="mbi-EP-DCP" secondAttribute="top" id="Xy6-YT-THc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gn9-8i-1wH" secondAttribute="trailing" id="d4n-Hu-IvJ"/>
+                                            <constraint firstItem="vye-Vm-nfo" firstAttribute="bottom" secondItem="mbi-EP-DCP" secondAttribute="bottom" id="d6c-p6-IH4"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZQw-vI-meg" secondAttribute="bottom" id="Ki8-SJ-Lsz"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gk8-CC-7dE" secondAttribute="trailing" id="MYj-iq-dcD"/>
+                                    <constraint firstItem="ex6-OX-eoM" firstAttribute="top" secondItem="EDw-mm-5Ne" secondAttribute="top" id="WrY-X5-zHs"/>
+                                    <constraint firstItem="ZQw-vI-meg" firstAttribute="top" secondItem="gk8-CC-7dE" secondAttribute="bottom" constant="20" id="a2P-cW-Cba"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZQw-vI-meg" secondAttribute="trailing" id="abD-Ph-ZF9"/>
+                                    <constraint firstItem="ex6-OX-eoM" firstAttribute="leading" secondItem="EDw-mm-5Ne" secondAttribute="leading" id="ai9-3c-AzD"/>
+                                    <constraint firstItem="ZQw-vI-meg" firstAttribute="leading" secondItem="EDw-mm-5Ne" secondAttribute="leading" id="erK-jA-GsH"/>
+                                    <constraint firstAttribute="trailing" secondItem="ex6-OX-eoM" secondAttribute="trailing" id="kQ0-dg-Z7a"/>
+                                    <constraint firstItem="gk8-CC-7dE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EDw-mm-5Ne" secondAttribute="leading" id="oiS-dF-D2F"/>
+                                    <constraint firstItem="gk8-CC-7dE" firstAttribute="centerX" secondItem="EDw-mm-5Ne" secondAttribute="centerX" id="sxo-ea-u5l"/>
+                                    <constraint firstItem="gk8-CC-7dE" firstAttribute="top" secondItem="ex6-OX-eoM" secondAttribute="bottom" constant="10" id="tI3-RX-Vga"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gYY-5M-jw6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="jzx-8w-i8g" secondAttribute="bottom" id="6VN-wm-AdM"/>
+                            <constraint firstItem="gaY-vT-f5q" firstAttribute="top" secondItem="gYY-5M-jw6" secondAttribute="top" id="G3y-y1-uxX"/>
+                            <constraint firstAttribute="trailing" secondItem="jzx-8w-i8g" secondAttribute="trailing" id="KCu-w4-lr9"/>
+                            <constraint firstItem="gaY-vT-f5q" firstAttribute="width" secondItem="gaY-vT-f5q" secondAttribute="height" multiplier="1:1" id="MfS-12-lAu"/>
+                            <constraint firstItem="EDw-mm-5Ne" firstAttribute="centerX" secondItem="5oZ-Vl-kaF" secondAttribute="centerX" id="W5M-hK-bCU"/>
+                            <constraint firstItem="mbi-EP-DCP" firstAttribute="height" secondItem="jzx-8w-i8g" secondAttribute="height" multiplier="0.5" id="a4F-T7-A4g"/>
+                            <constraint firstItem="gaY-vT-f5q" firstAttribute="width" secondItem="gaY-vT-f5q" secondAttribute="height" multiplier="1:1" id="cH5-5B-Xhl"/>
+                            <constraint firstItem="EDw-mm-5Ne" firstAttribute="top" secondItem="gaY-vT-f5q" secondAttribute="bottom" constant="8" id="dl6-X0-I2C"/>
+                            <constraint firstItem="gaY-vT-f5q" firstAttribute="leading" secondItem="gYY-5M-jw6" secondAttribute="leading" constant="20" id="kWu-LX-1g6"/>
+                            <constraint firstItem="gYY-5M-jw6" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="EDw-mm-5Ne" secondAttribute="bottom" constant="8" id="rY8-Sm-AvD"/>
+                            <constraint firstItem="gYY-5M-jw6" firstAttribute="trailing" secondItem="EDw-mm-5Ne" secondAttribute="trailing" constant="20" id="rny-X9-kgk"/>
+                            <constraint firstItem="jzx-8w-i8g" firstAttribute="leading" secondItem="5oZ-Vl-kaF" secondAttribute="leading" id="tlJ-YP-R6D"/>
+                            <constraint firstItem="jzx-8w-i8g" firstAttribute="top" secondItem="5oZ-Vl-kaF" secondAttribute="top" id="uCh-aj-ZOG"/>
+                            <constraint firstItem="EDw-mm-5Ne" firstAttribute="leading" secondItem="gYY-5M-jw6" secondAttribute="leading" constant="20" id="xIx-Zk-wiZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonAstronomicalApprovals" destination="EEc-Ai-6Iq" id="UFV-wv-cqV"/>
+                        <outlet property="buttonAstronomicalSystems" destination="2cp-VL-UUq" id="UKU-oJ-CSz"/>
+                        <outlet property="buttonGregorianCalendar" destination="98m-IF-K0H" id="uJQ-Kx-w0I"/>
+                        <outlet property="buttonHijriCalendar" destination="sSj-yu-l54" id="oby-kc-6e5"/>
+                        <outlet property="labelSubTitle" destination="iCQ-EZ-Bc1" id="Sex-Ka-54K"/>
+                        <outlet property="tableView" destination="mbi-EP-DCP" id="V6G-JQ-Jrg"/>
+                        <outletCollection property="collectionAllCategoriesButtons" destination="2cp-VL-UUq" collectionClass="NSMutableArray" id="UeV-8p-n3L"/>
+                        <outletCollection property="collectionAllCategoriesButtons" destination="EEc-Ai-6Iq" collectionClass="NSMutableArray" id="iPu-KO-O68"/>
+                        <outletCollection property="collectionAllCategoriesButtons" destination="sSj-yu-l54" collectionClass="NSMutableArray" id="DhT-zH-r4i"/>
+                        <outletCollection property="collectionAllCategoriesButtons" destination="98m-IF-K0H" collectionClass="NSMutableArray" id="Lg5-Kd-yck"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5A-g3-GY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="140.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="astronomical_approvals" width="47.5" height="61.5"/>
+        <image name="astronomical_approvals_hov" width="47.5" height="61.5"/>
+        <image name="astronomical_systems" width="47.5" height="61.5"/>
+        <image name="astronomical_systems_hov" width="47.5" height="61.5"/>
+        <image name="back" width="22" height="22"/>
+        <image name="background" width="360" height="789.5"/>
+        <image name="gregorian_calendar_guide" width="47.5" height="61.5"/>
+        <image name="gregorian_calendar_guide_hov" width="47.5" height="61.5"/>
+        <image name="hijri_calendar_guide" width="47.5" height="61.5"/>
+        <image name="hijri_calendar_guide_hov" width="47.5" height="61.5"/>
+        <image name="logo_watermark" width="1080" height="1061.5"/>
+        <namedColor name="primary">
+            <color red="0.51764705882352946" green="0.10196078431372549" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondaryBackground">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

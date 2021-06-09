@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="PrayersWidget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cpm-Yk-s8n">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RsH-ku-QyF">
+                                <rect key="frame" x="115" y="0.0" width="205" height="102"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="YkD-tt-POS">
+                                        <rect key="frame" x="64.5" y="17.5" width="76" height="67.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="السبت" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dV5-di-gQb">
+                                                <rect key="frame" x="0.0" y="0.0" width="76" height="23.5"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="20"/>
+                                                <color key="textColor" name="primary"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="U0J-MZ-9D7">
+                                                <rect key="frame" x="0.0" y="27.5" width="76" height="40"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2Eh-1j-Lgr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="17.5" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="يوم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvx-Sx-JjW">
+                                                                <rect key="frame" x="0.0" y="0.0" width="17.5" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                                                <color key="textColor" name="black"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يوم" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cId-Lw-ApW">
+                                                                <rect key="frame" x="0.0" y="20" width="17.5" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                                                <color key="textColor" name="black"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gnx-uv-HqM">
+                                                        <rect key="frame" x="21.5" y="0.0" width="27" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="شهر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSZ-RA-b12">
+                                                                <rect key="frame" x="0.0" y="0.0" width="27" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                                                <color key="textColor" name="black"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="شهر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCe-Lh-H5k">
+                                                                <rect key="frame" x="0.0" y="20" width="27" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                                                <color key="textColor" name="black"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="V8v-KV-nCo">
+                                                        <rect key="frame" x="52.5" y="0.0" width="23.5" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="سنة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQ5-gT-wTZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="23.5" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                                                <color key="textColor" name="black"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="سنة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1l-eJ-6fZ">
+                                                                <rect key="frame" x="0.0" y="20" width="23.5" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="17"/>
+                                                                <color key="textColor" name="black"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YkD-tt-POS" firstAttribute="centerX" secondItem="RsH-ku-QyF" secondAttribute="centerX" id="eX9-g4-VRX"/>
+                                    <constraint firstItem="YkD-tt-POS" firstAttribute="centerY" secondItem="RsH-ku-QyF" secondAttribute="centerY" id="uX0-Rh-BCD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGU-cv-ecu" customClass="SRCountdownTimer" customModule="PrayersWidget" customModuleProvider="target">
+                                <rect key="frame" x="40" y="8" width="75" height="75"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SGU-cv-ecu" secondAttribute="height" id="MWW-jM-4Pv"/>
+                                    <constraint firstAttribute="width" constant="75" id="mSr-KZ-V0S"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdb-4T-Qqj" customClass="CountdownLabel" customModule="CountdownLabel">
+                                <rect key="frame" x="57.5" y="83" width="40.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="16"/>
+                                <color key="textColor" name="black"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Js1-WA-jPh">
+                                <rect key="frame" x="60" y="29" width="35.5" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="الفجر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb2-Gm-UOg">
+                                        <rect key="frame" x="0.0" y="0.0" width="35.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                        <color key="textColor" name="black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIV-y6-dsn">
+                                        <rect key="frame" x="0.0" y="16.5" width="35.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                        <color key="textColor" name="black"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jet-XX-9hl">
+                                <rect key="frame" x="0.0" y="120" width="320" height="33"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AFz-h1-HLh">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="33"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <vibrancyEffect>
+                                    <blurEffect style="regular"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hPp-dI-Q6t">
+                                <rect key="frame" x="0.0" y="120" width="320" height="33"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Pln-rt-IDG">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="33"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="N9w-7w-dWh">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="33"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="الفجر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Lyb-3g-qTl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="13"/>
+                                                        <color key="textColor" name="black"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="الفجر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="QaJ-E4-3Uf">
+                                                        <rect key="frame" x="0.0" y="16.5" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="C6b-TV-NEU">
+                                                <rect key="frame" x="54" y="0.0" width="50" height="33"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="الشروق" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="IqW-oD-0Sy">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="13"/>
+                                                        <color key="textColor" name="black"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="الشروق" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="fht-X4-CWn">
+                                                        <rect key="frame" x="0.0" y="16.5" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dJB-vd-EEp">
+                                                <rect key="frame" x="108" y="0.0" width="50" height="33"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="الظهر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="pn2-2E-B8F">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                                        <color key="textColor" name="black"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="الظهر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="H4z-1U-Q6p">
+                                                        <rect key="frame" x="0.0" y="16.5" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="I8D-DY-4i9">
+                                                <rect key="frame" x="162" y="0.0" width="50" height="33"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="العصر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="KD8-cd-oBj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="13"/>
+                                                        <color key="textColor" name="black"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="العصر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="IM2-L7-ca9">
+                                                        <rect key="frame" x="0.0" y="16.5" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gEl-yl-DTw">
+                                                <rect key="frame" x="216" y="0.0" width="50" height="33"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="المغرب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="f8Z-6O-jvi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="13"/>
+                                                        <color key="textColor" name="black"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="المغرب" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="jd9-oh-3nm">
+                                                        <rect key="frame" x="0.0" y="16.5" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="09C-wF-Eur">
+                                                <rect key="frame" x="270" y="0.0" width="50" height="33"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="العشاء" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="u62-L3-WMg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="13"/>
+                                                        <color key="textColor" name="black"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="العشاء" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="yQD-Ap-LSs">
+                                                        <rect key="frame" x="0.0" y="16.5" width="50" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="14"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
+                        <constraints>
+                            <constraint firstItem="hPp-dI-Q6t" firstAttribute="leading" secondItem="jet-XX-9hl" secondAttribute="leading" id="371-4B-wes"/>
+                            <constraint firstItem="cpm-Yk-s8n" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="4AB-lG-Ruy"/>
+                            <constraint firstItem="hPp-dI-Q6t" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="120" id="AcR-fB-h3l"/>
+                            <constraint firstItem="jet-XX-9hl" firstAttribute="top" secondItem="cpm-Yk-s8n" secondAttribute="bottom" id="CdI-oJ-0CG"/>
+                            <constraint firstItem="sdb-4T-Qqj" firstAttribute="centerX" secondItem="SGU-cv-ecu" secondAttribute="centerX" id="Jd7-Bk-hpf"/>
+                            <constraint firstItem="SGU-cv-ecu" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" constant="40" id="OrV-1v-TSP"/>
+                            <constraint firstItem="sdb-4T-Qqj" firstAttribute="top" secondItem="SGU-cv-ecu" secondAttribute="bottom" id="Tt2-s0-lOs"/>
+                            <constraint firstItem="RsH-ku-QyF" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" id="Vn9-Nf-UY9"/>
+                            <constraint firstItem="hPp-dI-Q6t" firstAttribute="top" secondItem="jet-XX-9hl" secondAttribute="top" id="Xv4-0J-JHg"/>
+                            <constraint firstItem="hPp-dI-Q6t" firstAttribute="trailing" secondItem="jet-XX-9hl" secondAttribute="trailing" id="bQs-bQ-aNL"/>
+                            <constraint firstItem="cpm-Yk-s8n" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="c10-qP-7p2"/>
+                            <constraint firstItem="hPp-dI-Q6t" firstAttribute="trailing" secondItem="ssy-KU-ocm" secondAttribute="trailing" id="cbR-h5-QLh"/>
+                            <constraint firstAttribute="trailing" secondItem="cpm-Yk-s8n" secondAttribute="trailing" id="fKJ-dt-uqg"/>
+                            <constraint firstItem="Js1-WA-jPh" firstAttribute="centerY" secondItem="SGU-cv-ecu" secondAttribute="centerY" id="hnN-30-0Jn"/>
+                            <constraint firstItem="hPp-dI-Q6t" firstAttribute="leading" secondItem="ssy-KU-ocm" secondAttribute="leading" id="iVz-NS-eGu"/>
+                            <constraint firstItem="hPp-dI-Q6t" firstAttribute="bottom" secondItem="jet-XX-9hl" secondAttribute="bottom" id="ijP-Vf-n4G"/>
+                            <constraint firstItem="RsH-ku-QyF" firstAttribute="bottom" secondItem="sdb-4T-Qqj" secondAttribute="bottom" id="nIE-fT-BSe"/>
+                            <constraint firstItem="SGU-cv-ecu" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="8" id="qrf-8T-fd0"/>
+                            <constraint firstItem="Js1-WA-jPh" firstAttribute="centerX" secondItem="SGU-cv-ecu" secondAttribute="centerX" id="tBR-qz-nNm"/>
+                            <constraint firstItem="RsH-ku-QyF" firstAttribute="leading" secondItem="SGU-cv-ecu" secondAttribute="trailing" id="v7h-30-S8B"/>
+                            <constraint firstItem="ssy-KU-ocm" firstAttribute="trailing" secondItem="RsH-ku-QyF" secondAttribute="trailing" id="vaq-Sm-L8s"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="170"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="cpm-Yk-s8n" id="qLr-8L-Emq"/>
+                        <outlet property="countDownTimer" destination="SGU-cv-ecu" id="0hk-iI-lOA"/>
+                        <outlet property="labelAsr" destination="IM2-L7-ca9" id="knA-WU-dde"/>
+                        <outlet property="labelAsrTitle" destination="KD8-cd-oBj" id="zPg-Zr-eWA"/>
+                        <outlet property="labelDayGregorian" destination="cId-Lw-ApW" id="oaL-yA-Neh"/>
+                        <outlet property="labelDayHijri" destination="Nvx-Sx-JjW" id="Xfb-LT-xxC"/>
+                        <outlet property="labelDayOfWeek" destination="dV5-di-gQb" id="p2D-IC-viO"/>
+                        <outlet property="labelEshaa" destination="yQD-Ap-LSs" id="kl9-GA-pN3"/>
+                        <outlet property="labelEshaaTitle" destination="u62-L3-WMg" id="ey5-Nk-hyp"/>
+                        <outlet property="labelFajr" destination="QaJ-E4-3Uf" id="7Hc-kZ-EVe"/>
+                        <outlet property="labelFajrTitle" destination="Lyb-3g-qTl" id="LdR-HS-KRl"/>
+                        <outlet property="labelMaghrib" destination="jd9-oh-3nm" id="koC-rt-Ae5"/>
+                        <outlet property="labelMaghribTitle" destination="f8Z-6O-jvi" id="sEr-bW-E8s"/>
+                        <outlet property="labelMonthGregorian" destination="KCe-Lh-H5k" id="FTw-Mx-J6K"/>
+                        <outlet property="labelMonthHijri" destination="lSZ-RA-b12" id="e21-Vo-PdB"/>
+                        <outlet property="labelShrouk" destination="fht-X4-CWn" id="5Ww-6q-cN0"/>
+                        <outlet property="labelShroukTitle" destination="IqW-oD-0Sy" id="nVi-6o-V58"/>
+                        <outlet property="labelYearGregorian" destination="Z1l-eJ-6fZ" id="ZPL-Dq-fjn"/>
+                        <outlet property="labelYearHijri" destination="jQ5-gT-wTZ" id="gEj-2e-Upx"/>
+                        <outlet property="labelZuhr" destination="H4z-1U-Q6p" id="fIZ-1h-cJT"/>
+                        <outlet property="labelZuhrTitle" destination="pn2-2E-B8F" id="E4l-Rf-F0V"/>
+                        <outlet property="nearestPrayerRemainingTime" destination="sdb-4T-Qqj" id="K8c-b4-CxV"/>
+                        <outlet property="nearstPrayer" destination="Tb2-Gm-UOg" id="EpV-Df-Upu"/>
+                        <outlet property="nearstPrayerTime" destination="GIV-y6-dsn" id="BYJ-tY-xzv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="-40"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="sdb-4T-Qqj">
+            <size key="intrinsicContentSize" width="40.5" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="background" width="360" height="789.5"/>
+        <namedColor name="black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.51764705882352946" green="0.10196078431372549" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
